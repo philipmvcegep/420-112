@@ -5,7 +5,7 @@ title = 'Texte'
 weight = 14
 +++
 
-# Texte
+
 
 Le HTML permet de structurer le texte d'une page. Les balises indiquent au navigateur quel rôle joue chaque partie du contenu.
 

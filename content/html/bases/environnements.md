@@ -5,7 +5,6 @@ title = 'Environnements'
 weight = 12
 +++
 
-# Environnement
 
 Pour faire du HTML, on a besoin de deux choses principales :
 

@@ -1,4 +1,4 @@
-# Styles et mise en forme
+
 
 Le HTML permet aussi de modifier la façon dont le texte est présenté.
 

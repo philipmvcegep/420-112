@@ -5,7 +5,6 @@ title = 'Exercices'
 weight = 70
 +++
 
-# Exercices
 
 Ces exercices permettent de pratiquer les notions vues dans la section **Bases**.
 

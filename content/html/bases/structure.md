@@ -5,7 +5,6 @@ title = 'Structure'
 weight = 6
 +++
 
-# Structure
 
 Une page HTML possède une structure de base qui indique au navigateur comment interpréter le document.
 

@@ -6,7 +6,6 @@ weight = 9
 +++
 
 
-# Inspecter
 
 Le navigateur ne fait pas qu'afficher une page. Il permet aussi de regarder **comment cette page est construite**.
 
