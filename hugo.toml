@@ -1,0 +1,14 @@
+baseURL = 'http://localhost:1313/'
+languageCode = 'fr-ca'
+title = '420-C2A Contenu web'
+theme = 'hugo-theme-relearn'
+canonifyURLs = true
+
+[params]
+  themeVariant = "green"
+  disableLandingPageButton = true
+  alwaysopen = false
+  disableInlineCopyToClipBoard = true
+  disableBreadcrumb = false
+  disableToc = true
+  disableNextPrev = true
