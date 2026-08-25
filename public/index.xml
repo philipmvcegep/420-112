@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>420-C2A Contenu web</title>
+    <title>allo monde :: 420-C2A Contenu web</title>
     <link>http://localhost:1313/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Tue, 25 Aug 2026 15:28:34 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Html</title>
+      <link>http://localhost:1313/html/index.html</link>
+      <pubDate>Tue, 25 Aug 2026 15:28:34 -0400</pubDate>
+      <guid>http://localhost:1313/html/index.html</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

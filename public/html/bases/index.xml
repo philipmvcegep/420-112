@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bases :: 420-C2A Contenu web</title>
+    <link>http://localhost:1313/html/bases/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Tue, 25 Aug 2026 15:31:51 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/html/bases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Structure</title>
+      <link>http://localhost:1313/html/bases/structure/index.html</link>
+      <pubDate>Tue, 25 Aug 2026 15:30:58 -0400</pubDate>
+      <guid>http://localhost:1313/html/bases/structure/index.html</guid>
+      <description>Structure&#xD;Une page HTML possède une structure de base qui indique au navigateur comment interpréter le document.&#xA;La structure minimale&#xD;&lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;Ma page&lt;/title&gt; &lt;/head&gt; &lt;body&gt; Bonjour! &lt;/body&gt; &lt;/html&gt;&#xD;&lt;!DOCTYPE html&gt;&#xD;Indique au navigateur que le document utilise HTML5.</description>
+    </item>
+    <item>
+      <title>Inspect</title>
+      <link>http://localhost:1313/html/bases/inspect/index.html</link>
+      <pubDate>Tue, 25 Aug 2026 15:30:23 -0400</pubDate>
+      <guid>http://localhost:1313/html/bases/inspect/index.html</guid>
+      <description>Inspecter&#xD;Le navigateur ne fait pas qu’afficher une page. Il permet aussi de regarder comment cette page est construite.&#xA;Pour ouvrir les outils de développement, on peut :&#xA;appuyer sur F12; faire un clic droit sur une partie de la page et choisir Inspecter. Les éléments&#xD;Dans les outils de développement, l’onglet Elements (ou Éléments) permet de voir le HTML de la page.</description>
+    </item>
+    <item>
+      <title>Environnements</title>
+      <link>http://localhost:1313/html/bases/environnements/index.html</link>
+      <pubDate>Tue, 25 Aug 2026 15:31:51 -0400</pubDate>
+      <guid>http://localhost:1313/html/bases/environnements/index.html</guid>
+      <description>Environnement&#xD;Pour faire du HTML, on a besoin de deux choses principales :&#xA;un éditeur de code pour écrire notre HTML; un navigateur pour voir le résultat. Les fichiers HTML&#xD;Une page HTML est un fichier texte dont l’extension est .html.&#xA;Par exemple :</description>
+    </item>
+    <item>
+      <title>Texte</title>
+      <link>http://localhost:1313/html/bases/texte/index.html</link>
+      <pubDate>Tue, 25 Aug 2026 15:31:30 -0400</pubDate>
+      <guid>http://localhost:1313/html/bases/texte/index.html</guid>
+      <description>Texte&#xD;Le HTML permet de structurer le texte d’une page. Les balises indiquent au navigateur quel rôle joue chaque partie du contenu.&#xA;Paragraphes&#xD;La balise &lt;p&gt; permet de créer un paragraphe.&#xA;&lt;p&gt; Ceci est un paragraphe. &lt;/p&gt; &lt;p&gt; Ceci est un autre paragraphe. &lt;/p&gt;&#xD;Chaque &lt;p&gt; forme un bloc distinct.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,89 @@
++++
+date = '2026-08-25T15:31:30-04:00'
+draft = false
+title = 'Texte'
+weight = 14
++++
+
+# Texte
+
+Le HTML permet de structurer le texte d'une page. Les balises indiquent au navigateur quel rôle joue chaque partie du contenu.
+
+## Paragraphes
+
+La balise `<p>` permet de créer un paragraphe.
+
+```html
+<p>
+  Ceci est un paragraphe.
+</p>
+
+<p>
+  Ceci est un autre paragraphe.
+</p>
+```
+
+Chaque `<p>` forme un bloc distinct.
+
+## Titres
+
+Les balises `<h1>` à `<h6>` permettent de créer des titres de différents niveaux.
+
+```html
+<h1>Titre principal</h1>
+
+<h2>Sous-titre</h2>
+
+<h3>Sous-sous-titre</h3>
+```
+
+`<h1>` est le niveau le plus important et `<h6>` le moins important.
+
+On peut les voir comme une hiérarchie :
+
+```text
+h1
+├── h2
+│   ├── h3
+│   └── h3
+└── h2
+    └── h3
+```
+
+Il ne faut pas choisir un titre uniquement parce qu'il est plus gros ou plus petit. Le niveau du titre représente sa **place dans la structure du document**.
+
+## La police et la taille
+
+On peut modifier l'apparence du texte avec `style` :
+
+```html
+<p style="font-family: Arial;">
+  Texte en Arial
+</p>
+
+<p style="font-size: 24px;">
+  Texte plus grand
+</p>
+```
+
+On peut combiner les deux :
+
+```html
+<p style="font-family: Arial; font-size: 24px;">
+  Un texte personnalisé
+</p>
+```
+
+Nous verrons plus tard comment faire ces changements avec CSS plutôt que directement dans le HTML.
+
+## À retenir
+
+```text
+<h1> → <h6>   titres
+<p>            paragraphes
+<strong>       importance
+<em>           emphase
+<br>           retour à la ligne
+```
+
+Le HTML sert d'abord à **structurer le contenu**. Son apparence sera de plus en plus prise en charge par CSS.
