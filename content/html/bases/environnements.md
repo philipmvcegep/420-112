@@ -2,7 +2,7 @@
 date = '2026-08-25T15:31:51-04:00'
 draft = false
 title = 'Environnements'
-weight = 12
+weight = 2
 +++
 
 
@@ -37,9 +37,8 @@ navigateur
 page affichée
 ```
 
-Il n'y a pas besoin d'Internet ou d'un serveur pour commencer.
 
-On peut simplement ouvrir `index.html` dans un navigateur. L'adresse commencera généralement par `file://`, ce qui indique que le navigateur ouvre un fichier local.
+On peut simplement ouvrir `index.html` dans un navigateur. L'adresse commencera généralement par `C:/Users` et aura souvent une indication **File**, ce qui indique que le navigateur ouvre un fichier local et non un vrai site sur Internet.
 
 ## Notre boucle de travail
 
@@ -49,6 +48,14 @@ On va constamment faire ceci :
 modifier → enregistrer → actualiser → observer
 ```
 
-L'**éditeur** nous permet de modifier le fichier.
+L'**éditeur** nous permet de modifier le fichier. On peut choisir Notepad, Notepad++ ou même Vim (un outil plus avancé pour naviguer dans un document avec le clavier au lieu de la souris).
 
-Le **navigateur** nous permet de voir ce que ce fichier produit.
+Le **navigateur** nous permet de voir ce que ce fichier produit. C'est simplement une application comme Google Chrome, Firefox, Microsoft Edge. Ils sont conçus pour afficher du contenu HTML (CSS et javascript également).
+
+Souvent, les développeurs aiment utiliser un outil qui permet de voir l'arborescence des dossiers et des fichiers, tout en pouvant modifier leur contenu.  Ils facilitent aussi la boucle de travail et permettent de faire des projets plus complexes. C'est une `IDE` (environnement de développement)
+
+![VSCode](https://code.visualstudio.com/assets/blogs/2021/10/20/vscode-dev.png "VS Code")
+
+Exemples: VSCode (ci-dessus), IntelliJ (java), Pycharm (python)
+
+Il y a un débat sur le fait que VSCode est réellement une `IDE`. D'autres logiciels offrent nativement un support aux langages (python, java), recommandent parfois des améliorations et repèrent aussi des bugs potentiels. 

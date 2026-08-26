@@ -1,6 +1,6 @@
 baseURL = 'http://localhost:1313/'
 languageCode = 'fr-ca'
-title = '420-C2A Contenu web'
+title = '420-112 Création de sites web'
 theme = 'hugo-theme-relearn'
 canonifyURLs = true
 

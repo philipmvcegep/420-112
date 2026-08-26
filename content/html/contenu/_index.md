@@ -4,3 +4,4 @@ draft = false
 title = 'Contenu'
 weight = 2
 +++
+Ce chapitre consolide les bases en y ajoutant les balises imbriquées. Ceci va nous permettre de faire des éléments plus complexes.

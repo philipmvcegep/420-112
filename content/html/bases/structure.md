@@ -2,7 +2,7 @@
 date = '2026-08-25T15:30:58-04:00'
 draft = false
 title = 'Structure'
-weight = 6
+weight = 1
 +++
 
 
@@ -25,7 +25,7 @@ Une page HTML possède une structure de base qui indique au navigateur comment i
 
 ### `<!DOCTYPE html>`
 
-Indique au navigateur que le document utilise **HTML5**.
+Indique au navigateur que le document utilise **HTML5** (version la plus récente).
 
 ### `<html>`
 
@@ -90,4 +90,29 @@ On peut donc voir une page Web comme un ensemble de ressources :
        page affichée
 ```
 
-Le fichier HTML constitue la structure de base. Les autres ressources peuvent venir compléter cette structure.
+Ainsi, une page HTML moderne ressemble à ceci: 
+```html
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrated Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+    <h1>Integrated Page</h1>
+    <p>This is a paragraph on an integrated page.</p>
+    <button id="myButton">Click Me</button>
+    <script src="script.js"></script>
+</body>
+ 
+</html>
+```
+Le fichier index.HTML ci-dessus décrit la structure de base d'une page web. Il fait référence à deux autres fichiers:
+- le fichier des styles, styles.css, qui définit les styles dans le document (hauteur, position, couleur, etc.). 
+- le dossier des scripts, script.js, qui rend l'application interactive. 
+
+Pour l'instant, nous allons voir comment faire fonctionner un document HTML seul. Bien savoir diviser nos balises nous aidera beaucoup quand nous apprendrons CSS et JS et c'est souvent une grande partie du travail.

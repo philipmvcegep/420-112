@@ -4,3 +4,4 @@ draft = false
 title = 'Bases'
 weight = 1
 +++
+Ce chapitre aborde les bases du HTML, il vous aidera à comprendre et faire votre premier code HTML.

@@ -1,15 +1,15 @@
 +++
 date = '2026-08-25T15:30:23-04:00'
 draft = false
-title = 'Inspect'
-weight = 9
+title = 'Dev tools'
+weight = 3
 +++
 
 
 
 Le navigateur ne fait pas qu'afficher une page. Il permet aussi de regarder **comment cette page est construite**.
 
-Pour ouvrir les outils de développement, on peut :
+Pour ouvrir les outils de développement (`Dev tools`), on peut :
 
 - appuyer sur **F12**;
 - faire un clic droit sur une partie de la page et choisir **Inspecter**.
@@ -25,7 +25,7 @@ On peut y retrouver les différentes balises :
 <p>Bienvenue sur ma page!</p>
 ```
 
-On peut cliquer sur un élément dans la page pour voir directement le HTML qui lui correspond.
+On peut cliquer sur un élément dans la page pour voir directement le HTML qui lui correspond, après avoir appuyé sur le bouton **'Inspecter l'élément'** (**`d`**)
 
 On peut aussi cliquer sur une balise dans les outils de développement pour voir où elle se trouve dans la page.
 
@@ -58,4 +58,4 @@ HTML correspondant
 
 C'est particulièrement utile pour comprendre la relation entre **ce qu'on voit à l'écran** et **le code HTML qui le produit**.
 
-> 💡 Pendant le cours, utilisez souvent **Inspecter** pour explorer les pages et faire des liens entre le code et le résultat visuel.
+> Pendant le cours, utilisez souvent **Inspecter** pour explorer les pages et faire des liens entre le code et le résultat visuel.

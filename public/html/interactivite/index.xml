@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interactivite :: 420-C2A Contenu web</title>
+    <title>Interactivite :: 420-112 Création de sites web</title>
     <link>http://localhost:1313/html/interactivite/index.html</link>
     <description></description>
     <generator>Hugo</generator>
@@ -13,35 +13,35 @@
       <link>http://localhost:1313/html/interactivite/semantique/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:36:32 -0400</pubDate>
       <guid>http://localhost:1313/html/interactivite/semantique/index.html</guid>
-      <description></description>
+      <description>À venir</description>
     </item>
     <item>
       <title>Formulaires</title>
       <link>http://localhost:1313/html/interactivite/formulaires/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:36:21 -0400</pubDate>
       <guid>http://localhost:1313/html/interactivite/formulaires/index.html</guid>
-      <description></description>
+      <description>À venir</description>
     </item>
     <item>
       <title>Controle de formulaire</title>
       <link>http://localhost:1313/html/interactivite/controles_formulaire/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:37:15 -0400</pubDate>
       <guid>http://localhost:1313/html/interactivite/controles_formulaire/index.html</guid>
-      <description></description>
+      <description>À venir</description>
     </item>
     <item>
       <title>Selecteurs</title>
       <link>http://localhost:1313/html/interactivite/selecteurs/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:37:21 -0400</pubDate>
       <guid>http://localhost:1313/html/interactivite/selecteurs/index.html</guid>
-      <description></description>
+      <description>À venir</description>
     </item>
     <item>
       <title>Sujets avances</title>
       <link>http://localhost:1313/html/interactivite/sujets_avances/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:47:11 -0400</pubDate>
       <guid>http://localhost:1313/html/interactivite/sujets_avances/index.html</guid>
-      <description></description>
+      <description>À venir</description>
     </item>
   </channel>
 </rss>
