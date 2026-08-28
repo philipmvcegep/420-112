@@ -1,85 +1,81 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/html/bases/index.html</loc>
+    <loc>http://localhost:37821/html/bases/index.html</loc>
     <lastmod>2026-08-25T15:38:23-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/interactivite/semantique/index.html</loc>
+    <loc>http://localhost:37821/html/interactivite/semantique/index.html</loc>
     <lastmod>2026-08-25T15:36:32-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/contenu/listes/index.html</loc>
+    <loc>http://localhost:37821/html/contenu/listes/index.html</loc>
     <lastmod>2026-08-25T15:35:16-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/bases/structure/index.html</loc>
+    <loc>http://localhost:37821/html/bases/structure/index.html</loc>
     <lastmod>2026-08-25T15:30:58-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/contenu/index.html</loc>
+    <loc>http://localhost:37821/html/contenu/index.html</loc>
     <lastmod>2026-08-25T15:38:29-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/interactivite/formulaires/index.html</loc>
+    <loc>http://localhost:37821/html/interactivite/formulaires/index.html</loc>
     <lastmod>2026-08-25T15:36:21-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/contenu/tableaux/index.html</loc>
+    <loc>http://localhost:37821/html/contenu/tableaux/index.html</loc>
     <lastmod>2026-08-25T15:35:45-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/bases/environnements/index.html</loc>
+    <loc>http://localhost:37821/html/bases/environnements/index.html</loc>
     <lastmod>2026-08-25T15:31:51-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/interactivite/index.html</loc>
-    <lastmod>2026-08-25T15:38:15-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/interactivite/controles_formulaire/index.html</loc>
-    <lastmod>2026-08-25T15:37:15-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/bases/dev_tools/index.html</loc>
-    <lastmod>2026-08-25T15:30:23-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/interactivite/selecteurs/index.html</loc>
-    <lastmod>2026-08-25T15:37:21-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/contenu/navigation/index.html</loc>
-    <lastmod>2026-08-25T15:35:33-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/bases/texte/index.html</loc>
-    <lastmod>2026-08-25T15:31:30-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/bases/exercices/index.html</loc>
-    <lastmod>2026-08-26T00:22:01-04:00</lastmod>
-  </url>
-  <url>
-    <loc>http://localhost:1313/html/interactivite/sujets_avances/index.html</loc>
+    <loc>http://localhost:37821/html/interactivite/sujets_avances/index.html</loc>
     <lastmod>2026-08-25T15:47:11-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/contenu/exercices/index.html</loc>
+    <loc>http://localhost:37821/html/bases/dev_tools/index.html</loc>
+    <lastmod>2026-08-25T15:30:23-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:37821/html/interactivite/exercices/index.html</loc>
+    <lastmod>2026-08-25T15:37:15-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:37821/html/contenu/navigation/index.html</loc>
+    <lastmod>2026-08-25T15:35:33-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:37821/html/bases/texte/index.html</loc>
+    <lastmod>2026-08-25T15:31:30-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:37821/html/bases/exercices/index.html</loc>
+    <lastmod>2026-08-26T00:22:01-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:37821/html/interactivite/index.html</loc>
+    <lastmod>2026-08-25T15:38:15-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:37821/html/contenu/exercices/index.html</loc>
     <lastmod>2026-08-26T00:14:30-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/index.html</loc>
+    <loc>http://localhost:37821/html/index.html</loc>
     <lastmod>2026-08-25T15:28:34-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/index.html</loc>
+    <loc>http://localhost:37821/index.html</loc>
     <lastmod>2026-08-25T12:40:20-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/categories/index.html</loc>
+    <loc>http://localhost:37821/categories/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tags/index.html</loc>
+    <loc>http://localhost:37821/tags/index.html</loc>
   </url>
 </urlset>

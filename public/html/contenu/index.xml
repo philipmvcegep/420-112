@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contenu :: 420-112 Création de sites web</title>
-    <link>http://localhost:1313/html/contenu/index.html</link>
+    <link>http://localhost:37821/html/contenu/index.html</link>
     <description>Ce chapitre consolide les bases en y ajoutant les balises imbriquées. Ceci va nous permettre de faire des éléments plus complexes.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <lastBuildDate>Wed, 26 Aug 2026 00:14:30 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/html/contenu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:37821/html/contenu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Listes</title>
-      <link>http://localhost:1313/html/contenu/listes/index.html</link>
+      <link>http://localhost:37821/html/contenu/listes/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:35:16 -0400</pubDate>
-      <guid>http://localhost:1313/html/contenu/listes/index.html</guid>
-      <description>Les listes en HTML sont souvent de deux natures: ordonnée et non-ordonnée. On peut voir les deux simplement comme une énumération ou une bullet list.&#xA;Exemple d’énumération:&#xA;&lt;ol&gt; &lt;li&gt;Remplir le formulaire en ligne&lt;/li&gt; &lt;li&gt;Contacter un agent pour régler&lt;/li&gt; &lt;li&gt;Organiser une rencontre avec un employé&lt;/li&gt; &lt;/ol&gt;&#xD;Exemple de bullet list:&#xA;&lt;ul&gt; &lt;li&gt;Poivrons&lt;/li&gt; &lt;li&gt;Thé&lt;/li&gt; &lt;li&gt;Cerises&lt;/li&gt; &lt;/ul&gt;&#xD;On peut voir que les deux listes sont composées de trois éléments: &lt;ul&gt;, &lt;ol&gt; et &lt;li&gt;. &lt;ul&gt; veut simplement dire Unordered List (liste non-ordonnée), tandis que &lt;ol&gt; signifie Ordered List (liste ordonnée). Chaque item dans la liste est un List Item, soit &lt;li&gt;.</description>
+      <guid>http://localhost:37821/html/contenu/listes/index.html</guid>
+      <description>Les listes en HTML sont souvent de deux natures: ordonnée et non-ordonnée. On peut voir les deux simplement comme une énumération ou une bullet list.&#xA;Exemple d’énumération:&#xA;&lt;ol&gt; &lt;li&gt;Remplir le formulaire en ligne&lt;/li&gt; &lt;li&gt;Contacter un agent pour régler&lt;/li&gt; &lt;li&gt;Organiser une rencontre avec un employé&lt;/li&gt; &lt;/ol&gt; Exemple de bullet list:&#xA;&lt;ul&gt; &lt;li&gt;Poivrons&lt;/li&gt; &lt;li&gt;Thé&lt;/li&gt; &lt;li&gt;Cerises&lt;/li&gt; &lt;/ul&gt; On peut voir que les deux listes sont composées de trois éléments: &lt;ul&gt;, &lt;ol&gt; et &lt;li&gt;. &lt;ul&gt; veut simplement dire Unordered List (liste non-ordonnée), tandis que &lt;ol&gt; signifie Ordered List (liste ordonnée). Chaque item dans la liste est un List Item, soit &lt;li&gt;.</description>
     </item>
     <item>
       <title>Tableaux</title>
-      <link>http://localhost:1313/html/contenu/tableaux/index.html</link>
+      <link>http://localhost:37821/html/contenu/tableaux/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:35:45 -0400</pubDate>
-      <guid>http://localhost:1313/html/contenu/tableaux/index.html</guid>
-      <description>Les tableaux suivent la logique des listes vues avant. Les éléments sont placés en hiérarchie, du plus gros élément (le plus englobant) vers l’élément le plus petit.&#xA;Note: On appelle souvent l’élément le plus petit la granularité, ou plus familièrement le niveau de détail.&#xA;Exemple de tableau:&#xA;&lt;table&gt; &lt;tr&gt; &lt;th&gt;Company&lt;/th&gt; &lt;th&gt;Contact&lt;/th&gt; &lt;th&gt;Country&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Alfreds Futterkiste&lt;/td&gt; &lt;td&gt;Maria Anders&lt;/td&gt; &lt;td&gt;Germany&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt; &lt;td&gt;Francisco Chang&lt;/td&gt; &lt;td&gt;Mexico&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&#xD;(tiré de w3schools)</description>
+      <guid>http://localhost:37821/html/contenu/tableaux/index.html</guid>
+      <description>Les tableaux suivent la logique des listes vues avant. Les éléments sont placés en hiérarchie, du plus gros élément (le plus englobant) vers l’élément le plus petit.&#xA;Note: On appelle souvent l’élément le plus petit la granularité, ou plus familièrement le niveau de détail.&#xA;Exemple de tableau:&#xA;&lt;table&gt; &lt;tr&gt; &lt;th&gt;Company&lt;/th&gt; &lt;th&gt;Contact&lt;/th&gt; &lt;th&gt;Country&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Alfreds Futterkiste&lt;/td&gt; &lt;td&gt;Maria Anders&lt;/td&gt; &lt;td&gt;Germany&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Centro comercial Moctezuma&lt;/td&gt; &lt;td&gt;Francisco Chang&lt;/td&gt; &lt;td&gt;Mexico&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; (tiré de w3schools)</description>
     </item>
     <item>
       <title>Navigation</title>
-      <link>http://localhost:1313/html/contenu/navigation/index.html</link>
+      <link>http://localhost:37821/html/contenu/navigation/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:35:33 -0400</pubDate>
-      <guid>http://localhost:1313/html/contenu/navigation/index.html</guid>
-      <description>Un peu comme nous avions fait avec les styles, on peut définir une référence Web sur une balise HTML.&#xA;L’exemple suivant est le plus classique:&#xA;&lt;a href=&#34;https://isp.example.net/&#34;&gt;ISP™&lt;/a&gt;&#xD;La structure est toujours la suivante pour une balise: &lt;a attribut&gt;texte&lt;/a&gt;. On définit un attribut à &lt;&gt; pour la modifier, texte sera affiché à l’écran. Visuellement, href sera toujours dans la balise ouvrante, comme style l’était.</description>
+      <guid>http://localhost:37821/html/contenu/navigation/index.html</guid>
+      <description>Un peu comme nous avions fait avec les styles, on peut définir une référence Web sur une balise HTML.&#xA;L’exemple suivant est le plus classique:&#xA;&lt;a href=&#34;https://isp.example.net/&#34;&gt;ISP™&lt;/a&gt; La structure est toujours la suivante pour une balise: &lt;a attribut&gt;texte&lt;/a&gt;. On définit un attribut à &lt;&gt; pour la modifier, texte sera affiché à l’écran. Visuellement, href sera toujours dans la balise ouvrante, comme style l’était.</description>
     </item>
     <item>
       <title>Exercices</title>
-      <link>http://localhost:1313/html/contenu/exercices/index.html</link>
+      <link>http://localhost:37821/html/contenu/exercices/index.html</link>
       <pubDate>Wed, 26 Aug 2026 00:14:30 -0400</pubDate>
-      <guid>http://localhost:1313/html/contenu/exercices/index.html</guid>
-      <description>Exercice 1&#xD;Faites le tableau suivant:&#xA;Feature React Vue Angular Learning Curve Medium Easy Hard Performance ⭐⭐⭐⭐ ⭐⭐⭐⭐⭐ ⭐⭐⭐ Ecosystem Rich Good Complete Enterprise Support Facebook Independent Google TypeScript ✅ ✅ ✅ Built-in Community Activity Very High High Medium Exercice 2&#xD;Créez deux fichiers, source.html et fin.html. Mettre un lien hypertexte de source vers fin.</description>
+      <guid>http://localhost:37821/html/contenu/exercices/index.html</guid>
+      <description>Exercice 1 Faites le tableau suivant:&#xA;Feature React Vue Angular Learning Curve Medium Easy Hard Performance ⭐⭐⭐⭐ ⭐⭐⭐⭐⭐ ⭐⭐⭐ Ecosystem Rich Good Complete Enterprise Support Facebook Independent Google TypeScript ✅ ✅ ✅ Built-in Community Activity Very High High Medium Exercice 2 Créez deux fichiers, source.html et fin.html. Mettre un lien hypertexte de source vers fin.</description>
     </item>
   </channel>
 </rss>

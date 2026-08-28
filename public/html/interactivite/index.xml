@@ -2,46 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interactivite :: 420-112 Création de sites web</title>
-    <link>http://localhost:1313/html/interactivite/index.html</link>
+    <link>http://localhost:37821/html/interactivite/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <lastBuildDate>Tue, 25 Aug 2026 15:47:11 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/html/interactivite/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:37821/html/interactivite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Semantique</title>
-      <link>http://localhost:1313/html/interactivite/semantique/index.html</link>
+      <link>http://localhost:37821/html/interactivite/semantique/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:36:32 -0400</pubDate>
-      <guid>http://localhost:1313/html/interactivite/semantique/index.html</guid>
-      <description>À venir</description>
+      <guid>http://localhost:37821/html/interactivite/semantique/index.html</guid>
+      <description>Les balises sémantiques sont un ajout en HTML5. Ils permettent aux personnes non-voyantes de bien identifier les blocs HTML et permettent aussi un meilleur placement dans les moteurs de recherche comme Google. On parle ainsi de SEO, le search engine optimization.&#xA;En gros, on n’utilise pas de &lt;div&gt; partout.&#xA;Voici les balises les plus courantes:&#xA;&lt;header&gt; &lt;!-- En-tête de la page ou d&#39;une section (logo, titre principal, etc.) --&gt; &lt;/header&gt; &lt;nav&gt; &lt;!-- Zone contenant les liens de navigation principaux --&gt; &lt;/nav&gt; &lt;main&gt; &lt;!-- Le contenu central et unique de la page --&gt; &lt;/main&gt; &lt;footer&gt; &lt;!-- Le pied de page (copyrights, liens légaux, contact) --&gt; &lt;/footer&gt; Dans la page, on peut aussi structurer le contenu textuel avec les balises suivantes:</description>
     </item>
     <item>
       <title>Formulaires</title>
-      <link>http://localhost:1313/html/interactivite/formulaires/index.html</link>
+      <link>http://localhost:37821/html/interactivite/formulaires/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:36:21 -0400</pubDate>
-      <guid>http://localhost:1313/html/interactivite/formulaires/index.html</guid>
-      <description>À venir</description>
-    </item>
-    <item>
-      <title>Controle de formulaire</title>
-      <link>http://localhost:1313/html/interactivite/controles_formulaire/index.html</link>
-      <pubDate>Tue, 25 Aug 2026 15:37:15 -0400</pubDate>
-      <guid>http://localhost:1313/html/interactivite/controles_formulaire/index.html</guid>
-      <description>À venir</description>
-    </item>
-    <item>
-      <title>Selecteurs</title>
-      <link>http://localhost:1313/html/interactivite/selecteurs/index.html</link>
-      <pubDate>Tue, 25 Aug 2026 15:37:21 -0400</pubDate>
-      <guid>http://localhost:1313/html/interactivite/selecteurs/index.html</guid>
-      <description>À venir</description>
+      <guid>http://localhost:37821/html/interactivite/formulaires/index.html</guid>
+      <description>Le formulaire HTML est le principal moyen pour un utilisateur d’interagir avec une application web et d’envoyer des données au serveur. Tout part de la balise &lt;form&gt;.&#xA;&lt;form action=&#34;http://localhost:37821/traitement&#34; method=&#34;POST&#34;&gt; &lt;!-- Champ texte classique --&gt; &lt;div&gt; &lt;label for=&#34;nom&#34;&gt;Nom d&#39;utilisateur :&lt;/label&gt; &lt;input type=&#34;text&#34; id=&#34;nom&#34; name=&#34;username&#34; required&gt; &lt;/div&gt; &lt;!-- Mot de passe --&gt; &lt;div&gt; &lt;label for=&#34;mdp&#34;&gt;Mot de passe :&lt;/label&gt; &lt;input type=&#34;password&#34; id=&#34;mdp&#34; name=&#34;password&#34; required&gt; &lt;/div&gt; &lt;!-- Bouton de soumission --&gt; &lt;button type=&#34;submit&#34;&gt;Envoyer&lt;/button&gt; &lt;/form&gt; Attributs indispensables dans un formulaire:</description>
     </item>
     <item>
       <title>Sujets avances</title>
-      <link>http://localhost:1313/html/interactivite/sujets_avances/index.html</link>
+      <link>http://localhost:37821/html/interactivite/sujets_avances/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:47:11 -0400</pubDate>
-      <guid>http://localhost:1313/html/interactivite/sujets_avances/index.html</guid>
-      <description>À venir</description>
+      <guid>http://localhost:37821/html/interactivite/sujets_avances/index.html</guid>
+      <description>Intégration des médias (&lt;video&gt;, &lt;audio&gt; et &lt;iframe&gt;) Le HTML permet d’intégrer directement du contenu multimédia ou des éléments externes sans dépendre d’outils complexes.&#xA;&lt;video&gt; et &lt;audio&gt; : Balises natives pour lire des fichiers locaux. L’attribut controls est indispensable pour afficher les boutons de lecture, pause et volume.&#xA;&lt;iframe&gt; (Inline Frame) : Permet d’incruster une page web externe dans la vôtre (comme une carte Google Maps ou une vidéo YouTube).</description>
+    </item>
+    <item>
+      <title>exercices</title>
+      <link>http://localhost:37821/html/interactivite/exercices/index.html</link>
+      <pubDate>Tue, 25 Aug 2026 15:37:15 -0400</pubDate>
+      <guid>http://localhost:37821/html/interactivite/exercices/index.html</guid>
+      <description>Exercice 1 Prenez le code suivant et changer les &lt;div&gt; pour des balises sémantiques:&#xA;&lt;div id=&#34;wrapper&#34;&gt; &lt;div class=&#34;top-bar&#34;&gt; &lt;h1&gt;Mon Blog Tech&lt;/h1&gt; &lt;div class=&#34;menu&#34;&gt; &lt;a href=&#34;#&#34;&gt;Accueil&lt;/a&gt; &lt;a href=&#34;#&#34;&gt;Articles&lt;/a&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;content&#34;&gt; &lt;div class=&#34;post&#34;&gt; &lt;h2&gt;Les nouveautés HTML5&lt;/h2&gt; &lt;p&gt;Le HTML5 a introduit plein de nouveautés...&lt;/p&gt; &lt;/div&gt; &lt;div class=&#34;sidebar&#34;&gt; &lt;h3&gt;À propos&lt;/h3&gt; &lt;p&gt;Je suis un prof passionné de web.&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&#34;bottom-bar&#34;&gt; &lt;p&gt;&amp;copy; 2026 Mon Blog&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; Exercice 2 Objectif : Concevoir un formulaire structuré utilisant les bons types d’input et les bonnes pratiques d’accessibilité.</description>
     </item>
   </channel>
 </rss>
