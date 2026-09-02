@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bases :: 420-112 Création de sites web</title>
+    <link>http://localhost:1313/css/bases/index.html</link>
+    <description>Nous entrons dans la section CSS. Nous allons maintenant pouvoir styler nos pages de façon moderne.</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Wed, 02 Sep 2026 13:35:59 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/css/bases/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Intro</title>
+      <link>http://localhost:1313/css/bases/intro/index.html</link>
+      <pubDate>Wed, 02 Sep 2026 13:34:41 -0400</pubDate>
+      <guid>http://localhost:1313/css/bases/intro/index.html</guid>
+      <description>Les pages web reposent sur une séparation des rôles : le HTML fournit la structure brute et le contenu, tandis que le CSS (Cascading Style Sheets) gère l’apparence visuelle.&#xA;1. L’approche directe : l’attribut style Avant d’utiliser une feuille de style externe, on peut appliquer du CSS directement sur un élément HTML grâce à l’attribut style. C’est idéal pour comprendre rapidement le lien entre une propriété et son effet visuel.</description>
+    </item>
+    <item>
+      <title>Classes</title>
+      <link>http://localhost:1313/css/bases/classes/index.html</link>
+      <pubDate>Wed, 02 Sep 2026 13:33:46 -0400</pubDate>
+      <guid>http://localhost:1313/css/bases/classes/index.html</guid>
+      <description>Dans le chapitre précédent, nous avons vu comment cibler des balises HTML de manière globale (comme h1 ou p). Mais en pratique, on veut rarement que tous les paragraphes ou tous les boutons aient exactement la même apparence. C’est là que les classes deviennent indispensables.&#xA;1. Qu’est-ce qu’une classe ? Une classe est un identifiant réutilisable que l’on crée et que l’on attribue librement à n’importe quel élément HTML grâce à l’attribut class=&#34;...&#34;.</description>
+    </item>
+    <item>
+      <title>Ids</title>
+      <link>http://localhost:1313/css/bases/ids/index.html</link>
+      <pubDate>Wed, 02 Sep 2026 13:34:06 -0400</pubDate>
+      <guid>http://localhost:1313/css/bases/ids/index.html</guid>
+      <description>Après les classes qui servent à regrouper et réutiliser, passons aux IDs. Contrairement aux classes, un ID sert à cibler un élément unique sur toute la page.&#xA;1. Qu’est-ce qu’un ID ? Un ID (pour identifiant) est une balise d’unicité absolue.&#xA;Analogie : Pensez au numéro de passeport ou au NAS (numéro d’assurance sociale). Il ne peut y avoir qu’une seule personne avec ce numéro exact sur toute la planète. En HTML, un ID ne peut être présent qu’une seule fois par page web. 2. Utilisation en HTML On utilise l’attribut id=&#34;...&#34; pour nommer un élément unique (comme un en-tête principal, un pied de page, ou un formulaire de contact spécifique).</description>
+    </item>
+    <item>
+      <title>Selecteurs</title>
+      <link>http://localhost:1313/css/bases/selecteurs/index.html</link>
+      <pubDate>Wed, 02 Sep 2026 13:35:53 -0400</pubDate>
+      <guid>http://localhost:1313/css/bases/selecteurs/index.html</guid>
+      <description>Jusqu’à présent, nous avons ciblé des éléments soit par leur nom de balise, soit par une classe (.), soit par un ID (#). Mais que faire si l’on veut cibler un élément en fonction de sa position, de son état (comme le survol de la souris), ou de sa relation avec les autres éléments ? C’est le rôle des sélecteurs avancés.&#xA;1. Les combinateurs (relations entre éléments) Au lieu d’ajouter des classes partout, on peut utiliser la structure du HTML pour cibler des éléments précis.</description>
+    </item>
+    <item>
+      <title>Exercices</title>
+      <link>http://localhost:1313/css/bases/exercices/index.html</link>
+      <pubDate>Wed, 02 Sep 2026 13:35:59 -0400</pubDate>
+      <guid>http://localhost:1313/css/bases/exercices/index.html</guid>
+      <description>Exercice 1 : Introduction au style direct et externe Objectif : Mettre en pratique la liaison d’une feuille de style et modifier l’apparence de base. Consigne : Créez une page HTML avec un titre &lt;h1&gt;, un sous-titre &lt;h2&gt; et deux paragraphes &lt;p&gt;. Liez un fichier style.css externe à votre page. Dans style.css, changez la couleur du texte du titre en bleu, donnez une couleur d’arrière-plan claire à votre page entière (sur la balise body), et modifiez la police de caractères (font-family). Exercice 2 : La réutilisabilité des classes Objectif : Apprendre à cibler des éléments précis sans modifier toutes les balises du même type. Consigne : Écrivez une liste de 4 éléments (&lt;ul&gt; et &lt;li&gt;). Créez une classe nommée .important. Appliquez cette classe à deux des quatre éléments de la liste de votre choix. Dans votre CSS, faites en sorte que les éléments possédant cette classe s’affichent en gras et avec une couleur de texte rouge ou orange. Exercice 3 : Cumuler les classes (Variantes) Objectif : Combiner une classe générale et une classe spécifique sur un même élément. Consigne : Créez trois boutons &lt;button&gt; sur votre page. Donnez à tous les boutons une classe de base .btn (qui applique une bordure, un espacement padding et supprime le fond par défaut). Donnez au premier bouton une classe supplémentaire .btn-valider (fond vert, texte blanc). Donnez au deuxième bouton une classe .btn-annuler (fond rouge, texte blanc). Laissez le troisième bouton avec seulement .btn. Exercice 4 : L’unicité de l’ID Objectif : Utiliser un identifiant unique pour structurer une zone clé de la page. Consigne : Créez un bloc de type &lt;header&gt; et donnez-lui un ID unique : id=&#34;en-tete-site&#34;. À l’intérieur, ajoutez un titre et un petit texte de description. Dans votre CSS, ciblez cet ID pour lui donner un fond sombre, un texte blanc et un alignement centré. Essayez (mentalement ou dans le code) de voir pourquoi on ne remettrait pas cet ID sur un autre élément de la page. Exercice 5 : Sélecteurs avancés et interactions Objectif : Utiliser un combinateur, une pseudo-classe d’état (:hover) et une position (:nth-child). Consigne : Créez une liste de 5 éléments. Utilisez le sélecteur :nth-child(even) pour donner une couleur de fond gris clair à une ligne sur deux. Ajoutez un lien hypertexte &lt;a href=&#34;#&#34;&gt;Cliquez-moi&lt;/a&gt;. Utilisez la pseudo-classe :hover pour que, lorsque la souris passe sur le lien, la couleur du texte change et le soulignement disparaisse (text-decoration: none;). Créez un titre &lt;h1&gt; suivi immédiatement d’un paragraphe &lt;p&gt;. Utilisez le combinateur de frère adjacent (h1 + p) pour grossir un peu le texte de ce paragraphe précis.</description>
+    </item>
+  </channel>
+</rss>

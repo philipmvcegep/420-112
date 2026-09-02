@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html :: 420-112 Création de sites web</title>
-    <link>http://localhost:37821/html/index.html</link>
+    <link>http://localhost:1313/html/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <lastBuildDate>Tue, 25 Aug 2026 15:38:29 -0400</lastBuildDate>
-    <atom:link href="http://localhost:37821/html/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bases</title>
-      <link>http://localhost:37821/html/bases/index.html</link>
+      <link>http://localhost:1313/html/bases/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:38:23 -0400</pubDate>
-      <guid>http://localhost:37821/html/bases/index.html</guid>
+      <guid>http://localhost:1313/html/bases/index.html</guid>
       <description>Ce chapitre aborde les bases du HTML, il vous aidera à comprendre et faire votre premier code HTML.</description>
     </item>
     <item>
       <title>Contenu</title>
-      <link>http://localhost:37821/html/contenu/index.html</link>
+      <link>http://localhost:1313/html/contenu/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:38:29 -0400</pubDate>
-      <guid>http://localhost:37821/html/contenu/index.html</guid>
+      <guid>http://localhost:1313/html/contenu/index.html</guid>
       <description>Ce chapitre consolide les bases en y ajoutant les balises imbriquées. Ceci va nous permettre de faire des éléments plus complexes.</description>
     </item>
     <item>
       <title>Interactivite</title>
-      <link>http://localhost:37821/html/interactivite/index.html</link>
+      <link>http://localhost:1313/html/interactivite/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:38:15 -0400</pubDate>
-      <guid>http://localhost:37821/html/interactivite/index.html</guid>
+      <guid>http://localhost:1313/html/interactivite/index.html</guid>
       <description></description>
     </item>
   </channel>

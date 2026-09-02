@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html id="R-html" lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="Exercice 1 : Introduction au style direct et externe Objectif : Mettre en pratique la liaison d’une feuille de style et modifier l’apparence de base. Consigne : Créez une page HTML avec un titre &lt;h1&gt;, un sous-titre &lt;h2&gt; et deux paragraphes &lt;p&gt;. Liez un fichier style.css externe à votre page. Dans style.css, changez la couleur du texte du titre en bleu, donnez une couleur d’arrière-plan claire à votre page entière (sur la balise body), et modifiez la police de caractères (font-family). Exercice 2 : La réutilisabilité des classes Objectif : Apprendre à cibler des éléments précis sans modifier toutes les balises du même type. Consigne : Écrivez une liste de 4 éléments (&lt;ul&gt; et &lt;li&gt;). Créez une classe nommée .important. Appliquez cette classe à deux des quatre éléments de la liste de votre choix. Dans votre CSS, faites en sorte que les éléments possédant cette classe s’affichent en gras et avec une couleur de texte rouge ou orange. Exercice 3 : Cumuler les classes (Variantes) Objectif : Combiner une classe générale et une classe spécifique sur un même élément. Consigne : Créez trois boutons &lt;button&gt; sur votre page. Donnez à tous les boutons une classe de base .btn (qui applique une bordure, un espacement padding et supprime le fond par défaut). Donnez au premier bouton une classe supplémentaire .btn-valider (fond vert, texte blanc). Donnez au deuxième bouton une classe .btn-annuler (fond rouge, texte blanc). Laissez le troisième bouton avec seulement .btn. Exercice 4 : L’unicité de l’ID Objectif : Utiliser un identifiant unique pour structurer une zone clé de la page. Consigne : Créez un bloc de type &lt;header&gt; et donnez-lui un ID unique : id=&#34;en-tete-site&#34;. À l’intérieur, ajoutez un titre et un petit texte de description. Dans votre CSS, ciblez cet ID pour lui donner un fond sombre, un texte blanc et un alignement centré. Essayez (mentalement ou dans le code) de voir pourquoi on ne remettrait pas cet ID sur un autre élément de la page. Exercice 5 : Sélecteurs avancés et interactions Objectif : Utiliser un combinateur, une pseudo-classe d’état (:hover) et une position (:nth-child). Consigne : Créez une liste de 5 éléments. Utilisez le sélecteur :nth-child(even) pour donner une couleur de fond gris clair à une ligne sur deux. Ajoutez un lien hypertexte &lt;a href=&#34;#&#34;&gt;Cliquez-moi&lt;/a&gt;. Utilisez la pseudo-classe :hover pour que, lorsque la souris passe sur le lien, la couleur du texte change et le soulignement disparaisse (text-decoration: none;). Créez un titre &lt;h1&gt; suivi immédiatement d’un paragraphe &lt;p&gt;. Utilisez le combinateur de frère adjacent (h1 &#43; p) pour grossir un peu le texte de ce paragraphe précis.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Exercices :: 420-112 Création de sites web">
+    <meta name="twitter:description" content="Exercice 1 : Introduction au style direct et externe Objectif : Mettre en pratique la liaison d’une feuille de style et modifier l’apparence de base. Consigne : Créez une page HTML avec un titre &lt;h1&gt;, un sous-titre &lt;h2&gt; et deux paragraphes &lt;p&gt;. Liez un fichier style.css externe à votre page. Dans style.css, changez la couleur du texte du titre en bleu, donnez une couleur d’arrière-plan claire à votre page entière (sur la balise body), et modifiez la police de caractères (font-family). Exercice 2 : La réutilisabilité des classes Objectif : Apprendre à cibler des éléments précis sans modifier toutes les balises du même type. Consigne : Écrivez une liste de 4 éléments (&lt;ul&gt; et &lt;li&gt;). Créez une classe nommée .important. Appliquez cette classe à deux des quatre éléments de la liste de votre choix. Dans votre CSS, faites en sorte que les éléments possédant cette classe s’affichent en gras et avec une couleur de texte rouge ou orange. Exercice 3 : Cumuler les classes (Variantes) Objectif : Combiner une classe générale et une classe spécifique sur un même élément. Consigne : Créez trois boutons &lt;button&gt; sur votre page. Donnez à tous les boutons une classe de base .btn (qui applique une bordure, un espacement padding et supprime le fond par défaut). Donnez au premier bouton une classe supplémentaire .btn-valider (fond vert, texte blanc). Donnez au deuxième bouton une classe .btn-annuler (fond rouge, texte blanc). Laissez le troisième bouton avec seulement .btn. Exercice 4 : L’unicité de l’ID Objectif : Utiliser un identifiant unique pour structurer une zone clé de la page. Consigne : Créez un bloc de type &lt;header&gt; et donnez-lui un ID unique : id=&#34;en-tete-site&#34;. À l’intérieur, ajoutez un titre et un petit texte de description. Dans votre CSS, ciblez cet ID pour lui donner un fond sombre, un texte blanc et un alignement centré. Essayez (mentalement ou dans le code) de voir pourquoi on ne remettrait pas cet ID sur un autre élément de la page. Exercice 5 : Sélecteurs avancés et interactions Objectif : Utiliser un combinateur, une pseudo-classe d’état (:hover) et une position (:nth-child). Consigne : Créez une liste de 5 éléments. Utilisez le sélecteur :nth-child(even) pour donner une couleur de fond gris clair à une ligne sur deux. Ajoutez un lien hypertexte &lt;a href=&#34;#&#34;&gt;Cliquez-moi&lt;/a&gt;. Utilisez la pseudo-classe :hover pour que, lorsque la souris passe sur le lien, la couleur du texte change et le soulignement disparaisse (text-decoration: none;). Créez un titre &lt;h1&gt; suivi immédiatement d’un paragraphe &lt;p&gt;. Utilisez le combinateur de frère adjacent (h1 &#43; p) pour grossir un peu le texte de ce paragraphe précis.">
+    <meta property="og:url" content="http://localhost:1313/css/bases/exercices/index.html">
+    <meta property="og:site_name" content="420-112 Création de sites web">
+    <meta property="og:title" content="Exercices :: 420-112 Création de sites web">
+    <meta property="og:description" content="Exercice 1 : Introduction au style direct et externe Objectif : Mettre en pratique la liaison d’une feuille de style et modifier l’apparence de base. Consigne : Créez une page HTML avec un titre &lt;h1&gt;, un sous-titre &lt;h2&gt; et deux paragraphes &lt;p&gt;. Liez un fichier style.css externe à votre page. Dans style.css, changez la couleur du texte du titre en bleu, donnez une couleur d’arrière-plan claire à votre page entière (sur la balise body), et modifiez la police de caractères (font-family). Exercice 2 : La réutilisabilité des classes Objectif : Apprendre à cibler des éléments précis sans modifier toutes les balises du même type. Consigne : Écrivez une liste de 4 éléments (&lt;ul&gt; et &lt;li&gt;). Créez une classe nommée .important. Appliquez cette classe à deux des quatre éléments de la liste de votre choix. Dans votre CSS, faites en sorte que les éléments possédant cette classe s’affichent en gras et avec une couleur de texte rouge ou orange. Exercice 3 : Cumuler les classes (Variantes) Objectif : Combiner une classe générale et une classe spécifique sur un même élément. Consigne : Créez trois boutons &lt;button&gt; sur votre page. Donnez à tous les boutons une classe de base .btn (qui applique une bordure, un espacement padding et supprime le fond par défaut). Donnez au premier bouton une classe supplémentaire .btn-valider (fond vert, texte blanc). Donnez au deuxième bouton une classe .btn-annuler (fond rouge, texte blanc). Laissez le troisième bouton avec seulement .btn. Exercice 4 : L’unicité de l’ID Objectif : Utiliser un identifiant unique pour structurer une zone clé de la page. Consigne : Créez un bloc de type &lt;header&gt; et donnez-lui un ID unique : id=&#34;en-tete-site&#34;. À l’intérieur, ajoutez un titre et un petit texte de description. Dans votre CSS, ciblez cet ID pour lui donner un fond sombre, un texte blanc et un alignement centré. Essayez (mentalement ou dans le code) de voir pourquoi on ne remettrait pas cet ID sur un autre élément de la page. Exercice 5 : Sélecteurs avancés et interactions Objectif : Utiliser un combinateur, une pseudo-classe d’état (:hover) et une position (:nth-child). Consigne : Créez une liste de 5 éléments. Utilisez le sélecteur :nth-child(even) pour donner une couleur de fond gris clair à une ligne sur deux. Ajoutez un lien hypertexte &lt;a href=&#34;#&#34;&gt;Cliquez-moi&lt;/a&gt;. Utilisez la pseudo-classe :hover pour que, lorsque la souris passe sur le lien, la couleur du texte change et le soulignement disparaisse (text-decoration: none;). Créez un titre &lt;h1&gt; suivi immédiatement d’un paragraphe &lt;p&gt;. Utilisez le combinateur de frère adjacent (h1 &#43; p) pour grossir un peu le texte de ce paragraphe précis.">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Css">
+    <meta property="article:published_time" content="2026-09-02T13:35:59-04:00">
+    <meta property="article:modified_time" content="2026-09-02T13:35:59-04:00">
+    <meta itemprop="name" content="Exercices :: 420-112 Création de sites web">
+    <meta itemprop="description" content="Exercice 1 : Introduction au style direct et externe Objectif : Mettre en pratique la liaison d’une feuille de style et modifier l’apparence de base. Consigne : Créez une page HTML avec un titre &lt;h1&gt;, un sous-titre &lt;h2&gt; et deux paragraphes &lt;p&gt;. Liez un fichier style.css externe à votre page. Dans style.css, changez la couleur du texte du titre en bleu, donnez une couleur d’arrière-plan claire à votre page entière (sur la balise body), et modifiez la police de caractères (font-family). Exercice 2 : La réutilisabilité des classes Objectif : Apprendre à cibler des éléments précis sans modifier toutes les balises du même type. Consigne : Écrivez une liste de 4 éléments (&lt;ul&gt; et &lt;li&gt;). Créez une classe nommée .important. Appliquez cette classe à deux des quatre éléments de la liste de votre choix. Dans votre CSS, faites en sorte que les éléments possédant cette classe s’affichent en gras et avec une couleur de texte rouge ou orange. Exercice 3 : Cumuler les classes (Variantes) Objectif : Combiner une classe générale et une classe spécifique sur un même élément. Consigne : Créez trois boutons &lt;button&gt; sur votre page. Donnez à tous les boutons une classe de base .btn (qui applique une bordure, un espacement padding et supprime le fond par défaut). Donnez au premier bouton une classe supplémentaire .btn-valider (fond vert, texte blanc). Donnez au deuxième bouton une classe .btn-annuler (fond rouge, texte blanc). Laissez le troisième bouton avec seulement .btn. Exercice 4 : L’unicité de l’ID Objectif : Utiliser un identifiant unique pour structurer une zone clé de la page. Consigne : Créez un bloc de type &lt;header&gt; et donnez-lui un ID unique : id=&#34;en-tete-site&#34;. À l’intérieur, ajoutez un titre et un petit texte de description. Dans votre CSS, ciblez cet ID pour lui donner un fond sombre, un texte blanc et un alignement centré. Essayez (mentalement ou dans le code) de voir pourquoi on ne remettrait pas cet ID sur un autre élément de la page. Exercice 5 : Sélecteurs avancés et interactions Objectif : Utiliser un combinateur, une pseudo-classe d’état (:hover) et une position (:nth-child). Consigne : Créez une liste de 5 éléments. Utilisez le sélecteur :nth-child(even) pour donner une couleur de fond gris clair à une ligne sur deux. Ajoutez un lien hypertexte &lt;a href=&#34;#&#34;&gt;Cliquez-moi&lt;/a&gt;. Utilisez la pseudo-classe :hover pour que, lorsque la souris passe sur le lien, la couleur du texte change et le soulignement disparaisse (text-decoration: none;). Créez un titre &lt;h1&gt; suivi immédiatement d’un paragraphe &lt;p&gt;. Utilisez le combinateur de frère adjacent (h1 &#43; p) pour grossir un peu le texte de ce paragraphe précis.">
+    <meta itemprop="datePublished" content="2026-09-02T13:35:59-04:00">
+    <meta itemprop="dateModified" content="2026-09-02T13:35:59-04:00">
+    <meta itemprop="wordCount" content="431">
+    <title>Exercices :: 420-112 Création de sites web</title>
+    <link href="http://localhost:1313/css/auto-complete/auto-complete.min.css?1788371364" rel="stylesheet">
+    <script src="http://localhost:1313/js/auto-complete/auto-complete.min.js?1788371364" defer></script>
+    <script src="http://localhost:1313/js/search-lunr.js?1788371364" defer></script>
+    <script src="http://localhost:1313/js/search.js?1788371364" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="http://localhost:1313/searchindex.en.js?1788371364";
+    </script>
+    <script src="http://localhost:1313/js/lunr/lunr.min.js?1788371364" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.stemmer.support.min.js?1788371364" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.multi.min.js?1788371364" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.fr.min.js?1788371364" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="http://localhost:1313/fonts/fontawesome/css/all.min.css?1788371364" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/fonts/fontawesome/css/all.min.css?1788371364" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/css/perfect-scrollbar/perfect-scrollbar.min.css?1788371364" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1788371364" rel="stylesheet">
+    <link href="http://localhost:1313/css/format-html.css?1788371364" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/css\/bases\/exercices\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'green' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-origin="/css/bases/exercices/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/index.html"><span itemprop="name">Sites Web</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/css/index.html"><span itemprop="name">Css</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/css/bases/index.html"><span itemprop="name">Bases</span></a><meta itemprop="position" content="3">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Exercices</span><meta itemprop="position" content="4"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable css" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="exercices">Exercices</h1>
+
+<h3 id="exercice-1--introduction-au-style-direct-et-externe">Exercice 1 : Introduction au style direct et externe<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Objectif</strong> : Mettre en pratique la liaison d&rsquo;une feuille de style et modifier l&rsquo;apparence de base.</li>
+<li><strong>Consigne</strong> :
+<ol>
+<li>Créez une page HTML avec un titre <code>&lt;h1&gt;</code>, un sous-titre <code>&lt;h2&gt;</code> et deux paragraphes <code>&lt;p&gt;</code>.</li>
+<li>Liez un fichier <code>style.css</code> externe à votre page.</li>
+<li>Dans <code>style.css</code>, changez la couleur du texte du titre en bleu, donnez une couleur d&rsquo;arrière-plan claire à votre page entière (sur la balise <code>body</code>), et modifiez la police de caractères (<code>font-family</code>).</li>
+</ol>
+</li>
+</ul>
+<h3 id="exercice-2--la-réutilisabilité-des-classes">Exercice 2 : La réutilisabilité des classes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Objectif</strong> : Apprendre à cibler des éléments précis sans modifier toutes les balises du même type.</li>
+<li><strong>Consigne</strong> :
+<ol>
+<li>Écrivez une liste de 4 éléments (<code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code>).</li>
+<li>Créez une classe nommée <code>.important</code>.</li>
+<li>Appliquez cette classe à <strong>deux</strong> des quatre éléments de la liste de votre choix.</li>
+<li>Dans votre CSS, faites en sorte que les éléments possédant cette classe s&rsquo;affichent en <strong>gras</strong> et avec une couleur de texte rouge ou orange.</li>
+</ol>
+</li>
+</ul>
+<h3 id="exercice-3--cumuler-les-classes-variantes">Exercice 3 : Cumuler les classes (Variantes)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Objectif</strong> : Combiner une classe générale et une classe spécifique sur un même élément.</li>
+<li><strong>Consigne</strong> :
+<ol>
+<li>Créez trois boutons <code>&lt;button&gt;</code> sur votre page.</li>
+<li>Donnez à tous les boutons une classe de base <code>.btn</code> (qui applique une bordure, un espacement <code>padding</code> et supprime le fond par défaut).</li>
+<li>Donnez au premier bouton une classe supplémentaire <code>.btn-valider</code> (fond vert, texte blanc).</li>
+<li>Donnez au deuxième bouton une classe <code>.btn-annuler</code> (fond rouge, texte blanc).</li>
+<li>Laissez le troisième bouton avec seulement <code>.btn</code>.</li>
+</ol>
+</li>
+</ul>
+<h3 id="exercice-4--lunicité-de-lid">Exercice 4 : L&rsquo;unicité de l&rsquo;ID<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Objectif</strong> : Utiliser un identifiant unique pour structurer une zone clé de la page.</li>
+<li><strong>Consigne</strong> :
+<ol>
+<li>Créez un bloc de type <code>&lt;header&gt;</code> et donnez-lui un ID unique : <code>id=&quot;en-tete-site&quot;</code>.</li>
+<li>À l&rsquo;intérieur, ajoutez un titre et un petit texte de description.</li>
+<li>Dans votre CSS, ciblez cet ID pour lui donner un fond sombre, un texte blanc et un alignement centré.</li>
+<li>Essayez (mentalement ou dans le code) de voir pourquoi on ne remettrait pas cet ID sur un autre élément de la page.</li>
+</ol>
+</li>
+</ul>
+<h3 id="exercice-5--sélecteurs-avancés-et-interactions">Exercice 5 : Sélecteurs avancés et interactions<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<ul>
+<li><strong>Objectif</strong> : Utiliser un combinateur, une pseudo-classe d&rsquo;état (<code>:hover</code>) et une position (<code>:nth-child</code>).</li>
+<li><strong>Consigne</strong> :
+<ol>
+<li>Créez une liste de 5 éléments. Utilisez le sélecteur <code>:nth-child(even)</code> pour donner une couleur de fond gris clair à une ligne sur deux.</li>
+<li>Ajoutez un lien hypertexte <code>&lt;a href=&quot;#&quot;&gt;Cliquez-moi&lt;/a&gt;</code>. Utilisez la pseudo-classe <code>:hover</code> pour que, lorsque la souris passe sur le lien, la couleur du texte change et le soulignement disparaisse (<code>text-decoration: none;</code>).</li>
+<li>Créez un titre <code>&lt;h1&gt;</code> suivi immédiatement d&rsquo;un paragraphe <code>&lt;p&gt;</code>. Utilisez le combinateur de frère adjacent (<code>h1 + p</code>) pour grossir un peu le texte de ce paragraphe précis.</li>
+</ol>
+</li>
+</ul>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Sep 2, 2026
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="http://localhost:1313/index.html">
+          <span class="logo-title default-animation">420-112 Création de sites web</span>
+        </a>
+        <search><form action="http://localhost:1313/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/html/index.html"><a class="padding default-animation" href="http://localhost:1313/html/index.html">Html</a><ul id="R-subsections-11f324094906faa51a9fe97924473df2" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/css/index.html"><a class="padding default-animation" href="http://localhost:1313/css/index.html">Css</a><ul id="R-subsections-cb550966e0fcd7cba12f6b14839a317a" class="collapsible-menu">
+            <li class="parent " data-nav-id="/css/bases/index.html"><a class="padding default-animation" href="http://localhost:1313/css/bases/index.html">Bases</a><ul id="R-subsections-59a3bb7c57e9348f3724802f485bb449" class="collapsible-menu">
+            <li class="" data-nav-id="/css/bases/intro/index.html"><a class="padding" href="http://localhost:1313/css/bases/intro/index.html">Intro</a></li>
+            <li class="" data-nav-id="/css/bases/classes/index.html"><a class="padding" href="http://localhost:1313/css/bases/classes/index.html">Classes</a></li>
+            <li class="" data-nav-id="/css/bases/ids/index.html"><a class="padding" href="http://localhost:1313/css/bases/ids/index.html">Ids</a></li>
+            <li class="" data-nav-id="/css/bases/selecteurs/index.html"><a class="padding" href="http://localhost:1313/css/bases/selecteurs/index.html">Selecteurs</a></li>
+            <li class="active " data-nav-id="/css/bases/exercices/index.html"><a class="padding" href="http://localhost:1313/css/bases/exercices/index.html">Exercices</a></li></ul></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="http://localhost:1313/js/perfect-scrollbar/perfect-scrollbar.min.js?1788371364" defer></script>
+    <script src="http://localhost:1313/js/theme.js?1788371364" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

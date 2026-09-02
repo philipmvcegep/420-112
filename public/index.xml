@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sites Web :: 420-112 Création de sites web</title>
-    <link>http://localhost:37821/index.html</link>
+    <link>http://localhost:1313/index.html</link>
     <description></description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <lastBuildDate>Tue, 25 Aug 2026 15:28:34 -0400</lastBuildDate>
-    <atom:link href="http://localhost:37821/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Sep 2026 13:39:17 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Html</title>
-      <link>http://localhost:37821/html/index.html</link>
+      <link>http://localhost:1313/html/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:28:34 -0400</pubDate>
-      <guid>http://localhost:37821/html/index.html</guid>
+      <guid>http://localhost:1313/html/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Css</title>
+      <link>http://localhost:1313/css/index.html</link>
+      <pubDate>Wed, 02 Sep 2026 13:39:17 -0400</pubDate>
+      <guid>http://localhost:1313/css/index.html</guid>
       <description></description>
     </item>
   </channel>

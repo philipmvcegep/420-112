@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bases :: 420-112 Création de sites web</title>
-    <link>http://localhost:37821/html/bases/index.html</link>
+    <link>http://localhost:1313/html/bases/index.html</link>
     <description>Ce chapitre aborde les bases du HTML, il vous aidera à comprendre et faire votre premier code HTML.</description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
     <lastBuildDate>Wed, 26 Aug 2026 00:22:01 -0400</lastBuildDate>
-    <atom:link href="http://localhost:37821/html/bases/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/html/bases/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Structure</title>
-      <link>http://localhost:37821/html/bases/structure/index.html</link>
+      <link>http://localhost:1313/html/bases/structure/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:30:58 -0400</pubDate>
-      <guid>http://localhost:37821/html/bases/structure/index.html</guid>
+      <guid>http://localhost:1313/html/bases/structure/index.html</guid>
       <description>Une page HTML possède une structure de base qui indique au navigateur comment interpréter le document.&#xA;La structure minimale &lt;!DOCTYPE html&gt; &lt;html&gt; &lt;head&gt; &lt;title&gt;Ma page&lt;/title&gt; &lt;/head&gt; &lt;body&gt; Bonjour! &lt;/body&gt; &lt;/html&gt; &lt;!DOCTYPE html&gt; Indique au navigateur que le document utilise HTML5 (version la plus récente).</description>
     </item>
     <item>
       <title>Environnements</title>
-      <link>http://localhost:37821/html/bases/environnements/index.html</link>
+      <link>http://localhost:1313/html/bases/environnements/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:31:51 -0400</pubDate>
-      <guid>http://localhost:37821/html/bases/environnements/index.html</guid>
+      <guid>http://localhost:1313/html/bases/environnements/index.html</guid>
       <description>Pour faire du HTML, on a besoin de deux choses principales :&#xA;un éditeur de code pour écrire notre HTML; un navigateur pour voir le résultat. Les fichiers HTML Une page HTML est un fichier texte dont l’extension est .html.&#xA;Par exemple :&#xA;index.html On peut créer un fichier texte et changer son extension de .txt à .html.</description>
     </item>
     <item>
       <title>Dev tools</title>
-      <link>http://localhost:37821/html/bases/dev_tools/index.html</link>
+      <link>http://localhost:1313/html/bases/dev_tools/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:30:23 -0400</pubDate>
-      <guid>http://localhost:37821/html/bases/dev_tools/index.html</guid>
+      <guid>http://localhost:1313/html/bases/dev_tools/index.html</guid>
       <description>Le navigateur ne fait pas qu’afficher une page. Il permet aussi de regarder comment cette page est construite.&#xA;Pour ouvrir les outils de développement (Dev tools), on peut :&#xA;appuyer sur F12; faire un clic droit sur une partie de la page et choisir Inspecter. Les éléments Dans les outils de développement, l’onglet Elements (ou Éléments) permet de voir le HTML de la page.</description>
     </item>
     <item>
       <title>Texte</title>
-      <link>http://localhost:37821/html/bases/texte/index.html</link>
+      <link>http://localhost:1313/html/bases/texte/index.html</link>
       <pubDate>Tue, 25 Aug 2026 15:31:30 -0400</pubDate>
-      <guid>http://localhost:37821/html/bases/texte/index.html</guid>
+      <guid>http://localhost:1313/html/bases/texte/index.html</guid>
       <description>Le HTML permet de structurer le texte d’une page. Les balises indiquent au navigateur quel rôle joue chaque partie du contenu.&#xA;Paragraphes La balise &lt;p&gt; permet de créer un paragraphe.&#xA;&lt;p&gt; Ceci est un paragraphe. &lt;/p&gt; &lt;p&gt; Ceci est un autre paragraphe. &lt;/p&gt; Chaque &lt;p&gt; forme un bloc distinct.&#xA;Titres Les balises &lt;h1&gt; à &lt;h6&gt; permettent de créer des titres de différents niveaux.</description>
     </item>
     <item>
       <title>Exercices</title>
-      <link>http://localhost:37821/html/bases/exercices/index.html</link>
+      <link>http://localhost:1313/html/bases/exercices/index.html</link>
       <pubDate>Wed, 26 Aug 2026 00:22:01 -0400</pubDate>
-      <guid>http://localhost:37821/html/bases/exercices/index.html</guid>
+      <guid>http://localhost:1313/html/bases/exercices/index.html</guid>
       <description>Exercice 1 Créez un fichier HTML avec votre nom et votre animal préféré. Ouvrez votre fichier HTML dans le navigateur de votre choix.&#xA;Bonus: Essayez d’ouvrir le document dans un autre navigateur.&#xA;Exercice 2 Transformez les extraits de texte suivants en HTML en conservant leur structure et leur mise en forme.</description>
     </item>
   </channel>
