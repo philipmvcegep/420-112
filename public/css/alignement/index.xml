@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alignement :: 420-112 Création de sites web</title>
+    <link>http://localhost:1313/css/alignement/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Wed, 16 Sep 2026 13:23:21 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/css/alignement/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alignement</title>
+      <link>http://localhost:1313/css/alignement/alignement/index.html</link>
+      <pubDate>Wed, 16 Sep 2026 13:23:21 -0400</pubDate>
+      <guid>http://localhost:1313/css/alignement/alignement/index.html</guid>
+      <description>Chapitre 0 : Les fondations de l’alignement en CSS Avant d’explorer les grilles modernes et les boîtes flexibles, il est essentiel de comprendre comment un navigateur place et aligne les éléments par défaut, ainsi que les outils historiques à notre disposition.&#xA;Les grands principes à retenir Le flux normal : Par défaut, les blocs empilent les uns sous les autres et prennent toute la largeur. Les éléments en ligne se suivent de gauche à droite. Fixe vs Auto : Un élément peut avoir des dimensions fixes explicites (ex: width: 200px) ou s’ajuster automatiquement à son contenu (auto). L’espace disponible : On ne peut aligner un élément que s’il reste de l’espace libre dans son conteneur. 5 Exemples d’alignement traditionnel (Sans Flex/Grid) 1. Le centrage d’un bloc (margin: 0 auto) Pour centrer horizontalement un conteneur qui possède une largeur fixe.</description>
+    </item>
+  </channel>
+</rss>
