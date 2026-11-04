@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html id="R-html" lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="Voici la solution complète pour la série d’exercices d’introduction à JavaScript.
+/** * ============================================================================== * INTRODUCTION À JAVASCRIPT - EXERCICES COMPLÉTÉS * ============================================================================== */ // ============================================================================== // EXERCICE 1 : Extraction de nombres pairs // ============================================================================== console.log(&#34;--- Exercice 1 ---&#34;); const numbersEx1 = [3, 8, 12, 17, 20, 25, 30]; const evens = []; // Boucle for classique et condition modulo (%) pour les nombres pairs for (let i = 0; i &lt; numbersEx1.length; i&#43;&#43;) { if (numbersEx1[i] % 2 === 0) { evens.push(numbersEx1[i]); } } console.log(&#34;Nombres pairs extraits :&#34;, evens); // ============================================================================== // EXERCICE 2 : Étiquetage rapide de statut // ============================================================================== console.log(&#34;\n--- Exercice 2 ---&#34;); const scoresEx2 = [45, 82, 60, 95, 30]; // Utilisation de .forEach() et de l&#39;opérateur ternaire scoresEx2.forEach((score) =&gt; { const status = score &gt;= 60 ? &#34;Réussite&#34; : &#34;Échec&#34;; console.log(`Note : ${score}/100 - Statut : ${status}`); }); // ============================================================================== // EXERCICE 3 : Compteur par plage de température // ============================================================================== console.log(&#34;\n--- Exercice 3 ---&#34;); const temperatures = [18, 22, 27, 31, 15, 29, 34]; let coolCount = 0; let warmCount = 0; let hotCount = 0; // Boucle for et structure if / else if / else for (let i = 0; i &lt; temperatures.length; i&#43;&#43;) { const temp = temperatures[i]; if (temp &lt; 20) { coolCount&#43;&#43;; } else if (temp &lt;= 29) { warmCount&#43;&#43;; } else { hotCount&#43;&#43;; } } console.log(`Relevés frais (&lt; 20) : ${coolCount}`); console.log(`Relevés tempérés (20-29) : ${warmCount}`); console.log(`Relevés chauds (&gt;= 30) : ${hotCount}`); // ============================================================================== // EXERCICE 4 : Classificateur de stock // ============================================================================== console.log(&#34;\n--- Exercice 4 ---&#34;); const stockLevels = [5, 0, 12, 3, 20]; // Fonction fléchée avec des ternaires imbriqués const getStockStatus = (qty) =&gt; { return qty === 0 ? &#34;Rupture de stock&#34; : qty &lt; 5 ? &#34;Stock faible&#34; : &#34;En stock&#34;; }; // Parcours avec .forEach() stockLevels.forEach((qty) =&gt; { console.log(`Quantité : ${qty} -&gt; Statut : ${getStockStatus(qty)}`); }); // ============================================================================== // EXERCICE 5 : Calculateur de points de fidélité // ============================================================================== console.log(&#34;\n--- Exercice 5 ---&#34;); const customerTiers = [&#34;bronze&#34;, &#34;gold&#34;, &#34;silver&#34;, &#34;bronze&#34;, &#34;gold&#34;]; let totalPoints = 0; // Structure switch à l&#39;intérieur d&#39;un .forEach() customerTiers.forEach((tier) =&gt; { switch (tier) { case &#34;bronze&#34;: totalPoints &#43;= 10; break; case &#34;silver&#34;: totalPoints &#43;= 25; break; case &#34;gold&#34;: totalPoints &#43;= 50; break; default: totalPoints &#43;= 5; break; } }); console.log(`Total des points cumulés : ${totalPoints}`); // ============================================================================== // EXERCICE 6 : Vérification du seuil de livraison // ============================================================================== console.log(&#34;\n--- Exercice 6 ---&#34;); const cartPrices = [12.50, 45.00, 8.25, 35.00]; let subtotal = 0; // Somme du sous-total cartPrices.forEach((price) =&gt; { subtotal &#43;= price; }); // Calcul des frais de livraison et du total const shippingCost = subtotal &gt; 80.00 ? 0.00 : 15.00; const grandTotal = subtotal &#43; shippingCost; console.log(`Sous-total : $${subtotal.toFixed(2)}`); console.log(`Frais de livraison : $${shippingCost.toFixed(2)}`); console.log(`Montant total : $${grandTotal.toFixed(2)}`); // ============================================================================== // EXERCICE 7 : Pipeline de calcul de taxes // ============================================================================== console.log(&#34;\n--- Exercice 7 ---&#34;); // Fonction de calcul de tax (taux par défaut à 15%) const calculateTax = (subtotal, taxRate = 0.15) =&gt; { return subtotal * (1 &#43; taxRate); }; // Fonction de traitement des commandes const processOrders = (orders) =&gt; { orders.forEach((order, index) =&gt; { const taxedTotal = calculateTax(order); console.log( `Commande #${index &#43; 1} - Initial : $${order.toFixed(2)} | Avec taxes : $${taxedTotal.toFixed(2)}` ); }); }; const orderList = [50.00, 120.50, 15.00]; processOrders(orderList); // ============================================================================== // EXERCICE 8 : Calculateur de racines carrées // ============================================================================== console.log(&#34;\n--- Exercice 8 ---&#34;); const numbersEx8 = [9, 16, 24, 49, 81, 100]; // Fonction d&#39;analyse de la racine carrée const analyzeSquareRoot = (num) =&gt; { const root = Math.sqrt(num); const isWhole = Number.isInteger(root) ? &#34;Racine exacte&#34; : &#34;Racine décimale&#34;; console.log(`Nombre : ${num} | Racine : ${root.toFixed(2)} (${isWhole})`); }; // Exécution sur chaque élément numbersEx8.forEach(analyzeSquareRoot);">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Exercices :: 420-112 Création de sites web">
+    <meta name="twitter:description" content="Voici la solution complète pour la série d’exercices d’introduction à JavaScript.
+/** * ============================================================================== * INTRODUCTION À JAVASCRIPT - EXERCICES COMPLÉTÉS * ============================================================================== */ // ============================================================================== // EXERCICE 1 : Extraction de nombres pairs // ============================================================================== console.log(&#34;--- Exercice 1 ---&#34;); const numbersEx1 = [3, 8, 12, 17, 20, 25, 30]; const evens = []; // Boucle for classique et condition modulo (%) pour les nombres pairs for (let i = 0; i &lt; numbersEx1.length; i&#43;&#43;) { if (numbersEx1[i] % 2 === 0) { evens.push(numbersEx1[i]); } } console.log(&#34;Nombres pairs extraits :&#34;, evens); // ============================================================================== // EXERCICE 2 : Étiquetage rapide de statut // ============================================================================== console.log(&#34;\n--- Exercice 2 ---&#34;); const scoresEx2 = [45, 82, 60, 95, 30]; // Utilisation de .forEach() et de l&#39;opérateur ternaire scoresEx2.forEach((score) =&gt; { const status = score &gt;= 60 ? &#34;Réussite&#34; : &#34;Échec&#34;; console.log(`Note : ${score}/100 - Statut : ${status}`); }); // ============================================================================== // EXERCICE 3 : Compteur par plage de température // ============================================================================== console.log(&#34;\n--- Exercice 3 ---&#34;); const temperatures = [18, 22, 27, 31, 15, 29, 34]; let coolCount = 0; let warmCount = 0; let hotCount = 0; // Boucle for et structure if / else if / else for (let i = 0; i &lt; temperatures.length; i&#43;&#43;) { const temp = temperatures[i]; if (temp &lt; 20) { coolCount&#43;&#43;; } else if (temp &lt;= 29) { warmCount&#43;&#43;; } else { hotCount&#43;&#43;; } } console.log(`Relevés frais (&lt; 20) : ${coolCount}`); console.log(`Relevés tempérés (20-29) : ${warmCount}`); console.log(`Relevés chauds (&gt;= 30) : ${hotCount}`); // ============================================================================== // EXERCICE 4 : Classificateur de stock // ============================================================================== console.log(&#34;\n--- Exercice 4 ---&#34;); const stockLevels = [5, 0, 12, 3, 20]; // Fonction fléchée avec des ternaires imbriqués const getStockStatus = (qty) =&gt; { return qty === 0 ? &#34;Rupture de stock&#34; : qty &lt; 5 ? &#34;Stock faible&#34; : &#34;En stock&#34;; }; // Parcours avec .forEach() stockLevels.forEach((qty) =&gt; { console.log(`Quantité : ${qty} -&gt; Statut : ${getStockStatus(qty)}`); }); // ============================================================================== // EXERCICE 5 : Calculateur de points de fidélité // ============================================================================== console.log(&#34;\n--- Exercice 5 ---&#34;); const customerTiers = [&#34;bronze&#34;, &#34;gold&#34;, &#34;silver&#34;, &#34;bronze&#34;, &#34;gold&#34;]; let totalPoints = 0; // Structure switch à l&#39;intérieur d&#39;un .forEach() customerTiers.forEach((tier) =&gt; { switch (tier) { case &#34;bronze&#34;: totalPoints &#43;= 10; break; case &#34;silver&#34;: totalPoints &#43;= 25; break; case &#34;gold&#34;: totalPoints &#43;= 50; break; default: totalPoints &#43;= 5; break; } }); console.log(`Total des points cumulés : ${totalPoints}`); // ============================================================================== // EXERCICE 6 : Vérification du seuil de livraison // ============================================================================== console.log(&#34;\n--- Exercice 6 ---&#34;); const cartPrices = [12.50, 45.00, 8.25, 35.00]; let subtotal = 0; // Somme du sous-total cartPrices.forEach((price) =&gt; { subtotal &#43;= price; }); // Calcul des frais de livraison et du total const shippingCost = subtotal &gt; 80.00 ? 0.00 : 15.00; const grandTotal = subtotal &#43; shippingCost; console.log(`Sous-total : $${subtotal.toFixed(2)}`); console.log(`Frais de livraison : $${shippingCost.toFixed(2)}`); console.log(`Montant total : $${grandTotal.toFixed(2)}`); // ============================================================================== // EXERCICE 7 : Pipeline de calcul de taxes // ============================================================================== console.log(&#34;\n--- Exercice 7 ---&#34;); // Fonction de calcul de tax (taux par défaut à 15%) const calculateTax = (subtotal, taxRate = 0.15) =&gt; { return subtotal * (1 &#43; taxRate); }; // Fonction de traitement des commandes const processOrders = (orders) =&gt; { orders.forEach((order, index) =&gt; { const taxedTotal = calculateTax(order); console.log( `Commande #${index &#43; 1} - Initial : $${order.toFixed(2)} | Avec taxes : $${taxedTotal.toFixed(2)}` ); }); }; const orderList = [50.00, 120.50, 15.00]; processOrders(orderList); // ============================================================================== // EXERCICE 8 : Calculateur de racines carrées // ============================================================================== console.log(&#34;\n--- Exercice 8 ---&#34;); const numbersEx8 = [9, 16, 24, 49, 81, 100]; // Fonction d&#39;analyse de la racine carrée const analyzeSquareRoot = (num) =&gt; { const root = Math.sqrt(num); const isWhole = Number.isInteger(root) ? &#34;Racine exacte&#34; : &#34;Racine décimale&#34;; console.log(`Nombre : ${num} | Racine : ${root.toFixed(2)} (${isWhole})`); }; // Exécution sur chaque élément numbersEx8.forEach(analyzeSquareRoot);">
+    <meta property="og:url" content="http://localhost:1313/js/exercices/index.html">
+    <meta property="og:site_name" content="420-112 Création de sites web">
+    <meta property="og:title" content="Exercices :: 420-112 Création de sites web">
+    <meta property="og:description" content="Voici la solution complète pour la série d’exercices d’introduction à JavaScript.
+/** * ============================================================================== * INTRODUCTION À JAVASCRIPT - EXERCICES COMPLÉTÉS * ============================================================================== */ // ============================================================================== // EXERCICE 1 : Extraction de nombres pairs // ============================================================================== console.log(&#34;--- Exercice 1 ---&#34;); const numbersEx1 = [3, 8, 12, 17, 20, 25, 30]; const evens = []; // Boucle for classique et condition modulo (%) pour les nombres pairs for (let i = 0; i &lt; numbersEx1.length; i&#43;&#43;) { if (numbersEx1[i] % 2 === 0) { evens.push(numbersEx1[i]); } } console.log(&#34;Nombres pairs extraits :&#34;, evens); // ============================================================================== // EXERCICE 2 : Étiquetage rapide de statut // ============================================================================== console.log(&#34;\n--- Exercice 2 ---&#34;); const scoresEx2 = [45, 82, 60, 95, 30]; // Utilisation de .forEach() et de l&#39;opérateur ternaire scoresEx2.forEach((score) =&gt; { const status = score &gt;= 60 ? &#34;Réussite&#34; : &#34;Échec&#34;; console.log(`Note : ${score}/100 - Statut : ${status}`); }); // ============================================================================== // EXERCICE 3 : Compteur par plage de température // ============================================================================== console.log(&#34;\n--- Exercice 3 ---&#34;); const temperatures = [18, 22, 27, 31, 15, 29, 34]; let coolCount = 0; let warmCount = 0; let hotCount = 0; // Boucle for et structure if / else if / else for (let i = 0; i &lt; temperatures.length; i&#43;&#43;) { const temp = temperatures[i]; if (temp &lt; 20) { coolCount&#43;&#43;; } else if (temp &lt;= 29) { warmCount&#43;&#43;; } else { hotCount&#43;&#43;; } } console.log(`Relevés frais (&lt; 20) : ${coolCount}`); console.log(`Relevés tempérés (20-29) : ${warmCount}`); console.log(`Relevés chauds (&gt;= 30) : ${hotCount}`); // ============================================================================== // EXERCICE 4 : Classificateur de stock // ============================================================================== console.log(&#34;\n--- Exercice 4 ---&#34;); const stockLevels = [5, 0, 12, 3, 20]; // Fonction fléchée avec des ternaires imbriqués const getStockStatus = (qty) =&gt; { return qty === 0 ? &#34;Rupture de stock&#34; : qty &lt; 5 ? &#34;Stock faible&#34; : &#34;En stock&#34;; }; // Parcours avec .forEach() stockLevels.forEach((qty) =&gt; { console.log(`Quantité : ${qty} -&gt; Statut : ${getStockStatus(qty)}`); }); // ============================================================================== // EXERCICE 5 : Calculateur de points de fidélité // ============================================================================== console.log(&#34;\n--- Exercice 5 ---&#34;); const customerTiers = [&#34;bronze&#34;, &#34;gold&#34;, &#34;silver&#34;, &#34;bronze&#34;, &#34;gold&#34;]; let totalPoints = 0; // Structure switch à l&#39;intérieur d&#39;un .forEach() customerTiers.forEach((tier) =&gt; { switch (tier) { case &#34;bronze&#34;: totalPoints &#43;= 10; break; case &#34;silver&#34;: totalPoints &#43;= 25; break; case &#34;gold&#34;: totalPoints &#43;= 50; break; default: totalPoints &#43;= 5; break; } }); console.log(`Total des points cumulés : ${totalPoints}`); // ============================================================================== // EXERCICE 6 : Vérification du seuil de livraison // ============================================================================== console.log(&#34;\n--- Exercice 6 ---&#34;); const cartPrices = [12.50, 45.00, 8.25, 35.00]; let subtotal = 0; // Somme du sous-total cartPrices.forEach((price) =&gt; { subtotal &#43;= price; }); // Calcul des frais de livraison et du total const shippingCost = subtotal &gt; 80.00 ? 0.00 : 15.00; const grandTotal = subtotal &#43; shippingCost; console.log(`Sous-total : $${subtotal.toFixed(2)}`); console.log(`Frais de livraison : $${shippingCost.toFixed(2)}`); console.log(`Montant total : $${grandTotal.toFixed(2)}`); // ============================================================================== // EXERCICE 7 : Pipeline de calcul de taxes // ============================================================================== console.log(&#34;\n--- Exercice 7 ---&#34;); // Fonction de calcul de tax (taux par défaut à 15%) const calculateTax = (subtotal, taxRate = 0.15) =&gt; { return subtotal * (1 &#43; taxRate); }; // Fonction de traitement des commandes const processOrders = (orders) =&gt; { orders.forEach((order, index) =&gt; { const taxedTotal = calculateTax(order); console.log( `Commande #${index &#43; 1} - Initial : $${order.toFixed(2)} | Avec taxes : $${taxedTotal.toFixed(2)}` ); }); }; const orderList = [50.00, 120.50, 15.00]; processOrders(orderList); // ============================================================================== // EXERCICE 8 : Calculateur de racines carrées // ============================================================================== console.log(&#34;\n--- Exercice 8 ---&#34;); const numbersEx8 = [9, 16, 24, 49, 81, 100]; // Fonction d&#39;analyse de la racine carrée const analyzeSquareRoot = (num) =&gt; { const root = Math.sqrt(num); const isWhole = Number.isInteger(root) ? &#34;Racine exacte&#34; : &#34;Racine décimale&#34;; console.log(`Nombre : ${num} | Racine : ${root.toFixed(2)} (${isWhole})`); }; // Exécution sur chaque élément numbersEx8.forEach(analyzeSquareRoot);">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Js">
+    <meta property="article:published_time" content="2026-11-04T13:27:07-05:00">
+    <meta property="article:modified_time" content="2026-11-04T13:27:07-05:00">
+    <meta itemprop="name" content="Exercices :: 420-112 Création de sites web">
+    <meta itemprop="description" content="Voici la solution complète pour la série d’exercices d’introduction à JavaScript.
+/** * ============================================================================== * INTRODUCTION À JAVASCRIPT - EXERCICES COMPLÉTÉS * ============================================================================== */ // ============================================================================== // EXERCICE 1 : Extraction de nombres pairs // ============================================================================== console.log(&#34;--- Exercice 1 ---&#34;); const numbersEx1 = [3, 8, 12, 17, 20, 25, 30]; const evens = []; // Boucle for classique et condition modulo (%) pour les nombres pairs for (let i = 0; i &lt; numbersEx1.length; i&#43;&#43;) { if (numbersEx1[i] % 2 === 0) { evens.push(numbersEx1[i]); } } console.log(&#34;Nombres pairs extraits :&#34;, evens); // ============================================================================== // EXERCICE 2 : Étiquetage rapide de statut // ============================================================================== console.log(&#34;\n--- Exercice 2 ---&#34;); const scoresEx2 = [45, 82, 60, 95, 30]; // Utilisation de .forEach() et de l&#39;opérateur ternaire scoresEx2.forEach((score) =&gt; { const status = score &gt;= 60 ? &#34;Réussite&#34; : &#34;Échec&#34;; console.log(`Note : ${score}/100 - Statut : ${status}`); }); // ============================================================================== // EXERCICE 3 : Compteur par plage de température // ============================================================================== console.log(&#34;\n--- Exercice 3 ---&#34;); const temperatures = [18, 22, 27, 31, 15, 29, 34]; let coolCount = 0; let warmCount = 0; let hotCount = 0; // Boucle for et structure if / else if / else for (let i = 0; i &lt; temperatures.length; i&#43;&#43;) { const temp = temperatures[i]; if (temp &lt; 20) { coolCount&#43;&#43;; } else if (temp &lt;= 29) { warmCount&#43;&#43;; } else { hotCount&#43;&#43;; } } console.log(`Relevés frais (&lt; 20) : ${coolCount}`); console.log(`Relevés tempérés (20-29) : ${warmCount}`); console.log(`Relevés chauds (&gt;= 30) : ${hotCount}`); // ============================================================================== // EXERCICE 4 : Classificateur de stock // ============================================================================== console.log(&#34;\n--- Exercice 4 ---&#34;); const stockLevels = [5, 0, 12, 3, 20]; // Fonction fléchée avec des ternaires imbriqués const getStockStatus = (qty) =&gt; { return qty === 0 ? &#34;Rupture de stock&#34; : qty &lt; 5 ? &#34;Stock faible&#34; : &#34;En stock&#34;; }; // Parcours avec .forEach() stockLevels.forEach((qty) =&gt; { console.log(`Quantité : ${qty} -&gt; Statut : ${getStockStatus(qty)}`); }); // ============================================================================== // EXERCICE 5 : Calculateur de points de fidélité // ============================================================================== console.log(&#34;\n--- Exercice 5 ---&#34;); const customerTiers = [&#34;bronze&#34;, &#34;gold&#34;, &#34;silver&#34;, &#34;bronze&#34;, &#34;gold&#34;]; let totalPoints = 0; // Structure switch à l&#39;intérieur d&#39;un .forEach() customerTiers.forEach((tier) =&gt; { switch (tier) { case &#34;bronze&#34;: totalPoints &#43;= 10; break; case &#34;silver&#34;: totalPoints &#43;= 25; break; case &#34;gold&#34;: totalPoints &#43;= 50; break; default: totalPoints &#43;= 5; break; } }); console.log(`Total des points cumulés : ${totalPoints}`); // ============================================================================== // EXERCICE 6 : Vérification du seuil de livraison // ============================================================================== console.log(&#34;\n--- Exercice 6 ---&#34;); const cartPrices = [12.50, 45.00, 8.25, 35.00]; let subtotal = 0; // Somme du sous-total cartPrices.forEach((price) =&gt; { subtotal &#43;= price; }); // Calcul des frais de livraison et du total const shippingCost = subtotal &gt; 80.00 ? 0.00 : 15.00; const grandTotal = subtotal &#43; shippingCost; console.log(`Sous-total : $${subtotal.toFixed(2)}`); console.log(`Frais de livraison : $${shippingCost.toFixed(2)}`); console.log(`Montant total : $${grandTotal.toFixed(2)}`); // ============================================================================== // EXERCICE 7 : Pipeline de calcul de taxes // ============================================================================== console.log(&#34;\n--- Exercice 7 ---&#34;); // Fonction de calcul de tax (taux par défaut à 15%) const calculateTax = (subtotal, taxRate = 0.15) =&gt; { return subtotal * (1 &#43; taxRate); }; // Fonction de traitement des commandes const processOrders = (orders) =&gt; { orders.forEach((order, index) =&gt; { const taxedTotal = calculateTax(order); console.log( `Commande #${index &#43; 1} - Initial : $${order.toFixed(2)} | Avec taxes : $${taxedTotal.toFixed(2)}` ); }); }; const orderList = [50.00, 120.50, 15.00]; processOrders(orderList); // ============================================================================== // EXERCICE 8 : Calculateur de racines carrées // ============================================================================== console.log(&#34;\n--- Exercice 8 ---&#34;); const numbersEx8 = [9, 16, 24, 49, 81, 100]; // Fonction d&#39;analyse de la racine carrée const analyzeSquareRoot = (num) =&gt; { const root = Math.sqrt(num); const isWhole = Number.isInteger(root) ? &#34;Racine exacte&#34; : &#34;Racine décimale&#34;; console.log(`Nombre : ${num} | Racine : ${root.toFixed(2)} (${isWhole})`); }; // Exécution sur chaque élément numbersEx8.forEach(analyzeSquareRoot);">
+    <meta itemprop="datePublished" content="2026-11-04T13:27:07-05:00">
+    <meta itemprop="dateModified" content="2026-11-04T13:27:07-05:00">
+    <meta itemprop="wordCount" content="619">
+    <title>Exercices :: 420-112 Création de sites web</title>
+    <link href="http://localhost:1313/css/auto-complete/auto-complete.min.css?1793817095" rel="stylesheet">
+    <script src="http://localhost:1313/js/auto-complete/auto-complete.min.js?1793817095" defer></script>
+    <script src="http://localhost:1313/js/search-lunr.js?1793817095" defer></script>
+    <script src="http://localhost:1313/js/search.js?1793817095" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="http://localhost:1313/searchindex.en.js?1793817095";
+    </script>
+    <script src="http://localhost:1313/js/lunr/lunr.min.js?1793817095" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.stemmer.support.min.js?1793817095" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.multi.min.js?1793817095" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.fr.min.js?1793817095" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="http://localhost:1313/fonts/fontawesome/css/all.min.css?1793817095" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/fonts/fontawesome/css/all.min.css?1793817095" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/css/perfect-scrollbar/perfect-scrollbar.min.css?1793817095" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1793817095" rel="stylesheet">
+    <link href="http://localhost:1313/css/format-html.css?1793817095" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/js\/exercices\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'green' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-origin="/js/exercices/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/index.html"><span itemprop="name">Sites Web</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/js/index.html"><span itemprop="name">Js</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Exercices</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable js" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="exercices">Exercices</h1>
+
+<p>Voici la solution complète pour la série d&rsquo;exercices d&rsquo;introduction à JavaScript.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * INTRODUCTION À JAVASCRIPT - EXERCICES COMPLÉTÉS
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 1 : Extraction de nombres pairs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;--- Exercice 1 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbersEx1</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">evens</span> <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Boucle for classique et condition modulo (%) pour les nombres pairs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">numbersEx1</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">numbersEx1</span>[<span style="color:#a6e22e">i</span>] <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">evens</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">numbersEx1</span>[<span style="color:#a6e22e">i</span>]);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Nombres pairs extraits :&#34;</span>, <span style="color:#a6e22e">evens</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 2 : Étiquetage rapide de statut
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 2 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">scoresEx2</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">82</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">30</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Utilisation de .forEach() et de l&#39;opérateur ternaire
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">scoresEx2</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">score</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">status</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">score</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Réussite&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Échec&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Note : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">score</span><span style="color:#e6db74">}</span><span style="color:#e6db74">/100 - Statut : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">status</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 3 : Compteur par plage de température
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 3 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">temperatures</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">18</span>, <span style="color:#ae81ff">22</span>, <span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">31</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">29</span>, <span style="color:#ae81ff">34</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">coolCount</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">warmCount</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">hotCount</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Boucle for et structure if / else if / else
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">temperatures</span>.<span style="color:#a6e22e">length</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">temp</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">temperatures</span>[<span style="color:#a6e22e">i</span>];
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">temp</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">20</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">coolCount</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">temp</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">29</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">warmCount</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">hotCount</span><span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Relevés frais (&lt; 20) : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">coolCount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Relevés tempérés (20-29) : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">warmCount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Relevés chauds (&gt;= 30) : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">hotCount</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 4 : Classificateur de stock
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 4 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">stockLevels</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">20</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Fonction fléchée avec des ternaires imbriqués
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">getStockStatus</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">qty</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">qty</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Rupture de stock&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">:</span> <span style="color:#a6e22e">qty</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Stock faible&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;En stock&#34;</span>;
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Parcours avec .forEach()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">stockLevels</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">qty</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Quantité : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">qty</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> -&gt; Statut : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">getStockStatus</span>(<span style="color:#a6e22e">qty</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 5 : Calculateur de points de fidélité
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 5 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">customerTiers</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;bronze&#34;</span>, <span style="color:#e6db74">&#34;gold&#34;</span>, <span style="color:#e6db74">&#34;silver&#34;</span>, <span style="color:#e6db74">&#34;bronze&#34;</span>, <span style="color:#e6db74">&#34;gold&#34;</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">totalPoints</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Structure switch à l&#39;intérieur d&#39;un .forEach()
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">customerTiers</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">tier</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">switch</span> (<span style="color:#a6e22e">tier</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;bronze&#34;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">totalPoints</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;silver&#34;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">totalPoints</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">25</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;gold&#34;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">totalPoints</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">50</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">totalPoints</span> <span style="color:#f92672">+=</span> <span style="color:#ae81ff">5</span>;
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Total des points cumulés : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">totalPoints</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 6 : Vérification du seuil de livraison
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 6 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">cartPrices</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">12.50</span>, <span style="color:#ae81ff">45.00</span>, <span style="color:#ae81ff">8.25</span>, <span style="color:#ae81ff">35.00</span>];
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">subtotal</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Somme du sous-total
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">cartPrices</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">price</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">subtotal</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">price</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Calcul des frais de livraison et du total
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">shippingCost</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">subtotal</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">80.00</span> <span style="color:#f92672">?</span> <span style="color:#ae81ff">0.00</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">15.00</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">grandTotal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">subtotal</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">shippingCost</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Sous-total : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">subtotal</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Frais de livraison : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">shippingCost</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Montant total : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">grandTotal</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 7 : Pipeline de calcul de taxes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 7 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Fonction de calcul de tax (taux par défaut à 15%)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">calculateTax</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">subtotal</span>, <span style="color:#a6e22e">taxRate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.15</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">subtotal</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">taxRate</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Fonction de traitement des commandes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">processOrders</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">orders</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">orders</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">order</span>, <span style="color:#a6e22e">index</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">taxedTotal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculateTax</span>(<span style="color:#a6e22e">order</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">`Commande #</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">index</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> - Initial : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">order</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> | Avec taxes : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">taxedTotal</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">orderList</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">50.00</span>, <span style="color:#ae81ff">120.50</span>, <span style="color:#ae81ff">15.00</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">processOrders</span>(<span style="color:#a6e22e">orderList</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// EXERCICE 8 : Calculateur de racines carrées
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// ==============================================================================
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;\n--- Exercice 8 ---&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">numbersEx8</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">49</span>, <span style="color:#ae81ff">81</span>, <span style="color:#ae81ff">100</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Fonction d&#39;analyse de la racine carrée
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">analyzeSquareRoot</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">num</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">root</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">num</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">isWhole</span> <span style="color:#f92672">=</span> Number.<span style="color:#a6e22e">isInteger</span>(<span style="color:#a6e22e">root</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Racine exacte&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Racine décimale&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Nombre : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">num</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> | Racine : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">root</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> (</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">isWhole</span><span style="color:#e6db74">}</span><span style="color:#e6db74">)`</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Exécution sur chaque élément
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">numbersEx8</span>.<span style="color:#a6e22e">forEach</span>(<span style="color:#a6e22e">analyzeSquareRoot</span>);</span></span></code></pre></div>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Nov 4, 2026
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="http://localhost:1313/index.html">
+          <span class="logo-title default-animation">420-112 Création de sites web</span>
+        </a>
+        <search><form action="http://localhost:1313/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/html/index.html"><a class="padding default-animation" href="http://localhost:1313/html/index.html">Html</a><ul id="R-subsections-11f324094906faa51a9fe97924473df2" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/css/index.html"><a class="padding default-animation" href="http://localhost:1313/css/index.html">Css</a><ul id="R-subsections-cb550966e0fcd7cba12f6b14839a317a" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/js/index.html"><a class="padding default-animation" href="http://localhost:1313/js/index.html">Js</a><ul id="R-subsections-4f94b014729f610957bffa5a86d7dc7d" class="collapsible-menu">
+            <li class="" data-nav-id="/js/control/index.html"><a class="padding" href="http://localhost:1313/js/control/index.html">Control</a></li>
+            <li class="" data-nav-id="/js/functions/index.html"><a class="padding" href="http://localhost:1313/js/functions/index.html">Functions</a></li>
+            <li class="" data-nav-id="/js/loops/index.html"><a class="padding" href="http://localhost:1313/js/loops/index.html">Loops</a></li>
+            <li class="active " data-nav-id="/js/exercices/index.html"><a class="padding" href="http://localhost:1313/js/exercices/index.html">Exercices</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="http://localhost:1313/js/perfect-scrollbar/perfect-scrollbar.min.js?1793817095" defer></script>
+    <script src="http://localhost:1313/js/theme.js?1793817095" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>

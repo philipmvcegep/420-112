@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html id="R-html" lang="fr-ca" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="generator" content="Relearn 9.0.3+36307e4ed23582638ab689240ac7b427217803ee">
+    <meta name="description" content="Ce chapitre couvre la déclaration moderne des fonctions en JavaScript (ES6), l’application du principe DRY (Don’t Repeat Yourself), ainsi que les méthodes essentielles de manipulation de tableaux (push, pop, shift, unshift, splice).
+1. Pourquoi utiliser des fonctions ? (Le Principe DRY) Le principe DRY (Don’t Repeat Yourself) est une règle fondamentale en programmation : chaque bloc de logique métier ne doit exister qu’à un seul endroit dans le code.">
+    <meta name="author" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chapitre 3 : Fonctions & Notions ES6 :: 420-112 Création de sites web">
+    <meta name="twitter:description" content="Ce chapitre couvre la déclaration moderne des fonctions en JavaScript (ES6), l’application du principe DRY (Don’t Repeat Yourself), ainsi que les méthodes essentielles de manipulation de tableaux (push, pop, shift, unshift, splice).
+1. Pourquoi utiliser des fonctions ? (Le Principe DRY) Le principe DRY (Don’t Repeat Yourself) est une règle fondamentale en programmation : chaque bloc de logique métier ne doit exister qu’à un seul endroit dans le code.">
+    <meta property="og:url" content="http://localhost:1313/js/functions/index.html">
+    <meta property="og:site_name" content="420-112 Création de sites web">
+    <meta property="og:title" content="Chapitre 3 : Fonctions & Notions ES6 :: 420-112 Création de sites web">
+    <meta property="og:description" content="Ce chapitre couvre la déclaration moderne des fonctions en JavaScript (ES6), l’application du principe DRY (Don’t Repeat Yourself), ainsi que les méthodes essentielles de manipulation de tableaux (push, pop, shift, unshift, splice).
+1. Pourquoi utiliser des fonctions ? (Le Principe DRY) Le principe DRY (Don’t Repeat Yourself) est une règle fondamentale en programmation : chaque bloc de logique métier ne doit exister qu’à un seul endroit dans le code.">
+    <meta property="og:locale" content="fr_ca">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Js">
+    <meta property="article:published_time" content="2026-11-04T13:26:26-05:00">
+    <meta property="article:modified_time" content="2026-11-04T13:26:26-05:00">
+    <meta itemprop="name" content="Chapitre 3 : Fonctions & Notions ES6 :: 420-112 Création de sites web">
+    <meta itemprop="description" content="Ce chapitre couvre la déclaration moderne des fonctions en JavaScript (ES6), l’application du principe DRY (Don’t Repeat Yourself), ainsi que les méthodes essentielles de manipulation de tableaux (push, pop, shift, unshift, splice).
+1. Pourquoi utiliser des fonctions ? (Le Principe DRY) Le principe DRY (Don’t Repeat Yourself) est une règle fondamentale en programmation : chaque bloc de logique métier ne doit exister qu’à un seul endroit dans le code.">
+    <meta itemprop="datePublished" content="2026-11-04T13:26:26-05:00">
+    <meta itemprop="dateModified" content="2026-11-04T13:26:26-05:00">
+    <meta itemprop="wordCount" content="651">
+    <title>Chapitre 3 : Fonctions &amp; Notions ES6 :: 420-112 Création de sites web</title>
+    <link href="http://localhost:1313/css/auto-complete/auto-complete.min.css?1793817605" rel="stylesheet">
+    <script src="http://localhost:1313/js/auto-complete/auto-complete.min.js?1793817605" defer></script>
+    <script src="http://localhost:1313/js/search-lunr.js?1793817605" defer></script>
+    <script src="http://localhost:1313/js/search.js?1793817605" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="http://localhost:1313/searchindex.en.js?1793817605";
+    </script>
+    <script src="http://localhost:1313/js/lunr/lunr.min.js?1793817605" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.stemmer.support.min.js?1793817605" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.multi.min.js?1793817605" defer></script>
+    <script src="http://localhost:1313/js/lunr/lunr.fr.min.js?1793817605" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['fr'];
+    </script>
+    <link href="http://localhost:1313/fonts/fontawesome/css/all.min.css?1793817605" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="http://localhost:1313/fonts/fontawesome/css/all.min.css?1793817605" rel="stylesheet"></noscript>
+    <link href="http://localhost:1313/css/perfect-scrollbar/perfect-scrollbar.min.css?1793817605" rel="stylesheet">
+    <link href="http://localhost:1313/css/theme.css?1793817605" rel="stylesheet">
+    <link href="http://localhost:1313/css/format-html.css?1793817605" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = ``;
+      window.relearn.path='\/js\/functions\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
+      window.relearn.absBaseUri='http:\/\/localhost:1313';
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=true;
+      // translations
+      window.T_Copy_to_clipboard = `Copy text to clipboard`;
+      window.T_Copied_to_clipboard = `Text copied to clipboard!`;
+      window.T_Link_copied_to_clipboard = `Link copied to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      window.T_Browser_unsupported_feature = `This browser doesn't support this feature`;
+      // variant stuff
+      window.relearn.themevariants = [ 'green' ];
+      window.relearn.customvariantprefix = "my-custom-";
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        if( !variant ||
+            (!variant.startsWith(window.relearn.customvariantprefix) && !window.relearn.themevariants.includes(variant)) ||
+            (variant.startsWith(window.relearn.customvariantprefix) && !window.localStorage.getItem(window.relearn.absBaseUri + "/variantstylesheet-" + variant)) ){
+          variant = window.relearn.themevariants[0];
+          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+  </head>
+  <body class="mobile-support html" data-origin="/js/functions/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      <nav id="R-topbar" class="default-animation">
+        <div class="topbar-wrapper default-animation">
+          <div class="topbar-sidebar-divider default-animation"></div>
+          <div class="topbar-area topbar-area-start" data-area="start">
+            <div class="topbar-button topbar-button-sidebar default-animation" data-content-empty="disable" data-width-s="show" data-width-m="hide" data-width-l="hide">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleNav()" type="button" title="Menu (CTRL&#43;ALT&#43;n)"><i class="fa-fw fas fa-bars"></i></button></span>
+            </div>
+          </div>
+          <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/index.html"><span itemprop="name">Sites Web</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="http://localhost:1313/js/index.html"><span itemprop="name">Js</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Chapitre 3 : Fonctions &amp; Notions ES6</span><meta itemprop="position" content="3"></li>
+          </ol>
+          <div class="topbar-area topbar-area-end" data-area="end">
+            <div class="topbar-button topbar-button-more default-animation" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show">
+<span class="btn cstyle button link noborder notitle interactive"><button onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button></span>
+              <div class="topbar-content">
+                <div class="topbar-content-wrapper">
+                  <div class="topbar-area topbar-area-more" data-area="more">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable js" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="chapitre-3--fonctions--notions-es6">Chapitre 3 : Fonctions &amp; Notions ES6</h1>
+
+<p>Ce chapitre couvre la déclaration moderne des fonctions en JavaScript (ES6), l&rsquo;application du principe DRY (Don&rsquo;t Repeat Yourself), ainsi que les méthodes essentielles de manipulation de tableaux (<code>push</code>, <code>pop</code>, <code>shift</code>, <code>unshift</code>, <code>splice</code>).</p>
+<h2 id="1-pourquoi-utiliser-des-fonctions--le-principe-dry">1. Pourquoi utiliser des fonctions ? (Le Principe DRY)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Le principe <strong>DRY (Don&rsquo;t Repeat Yourself)</strong> est une règle fondamentale en programmation : chaque bloc de logique métier ne doit exister qu&rsquo;à un seul endroit dans le code.</p>
+<h3 id="-mauvaise-pratique--code-répétitif-wet---write-everything-twice">🔴 Mauvaise pratique : Code répétitif (WET - Write Everything Twice)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Sans fonction, le même calcul est réécrit plusieurs fois. Si la formule de taxe change (ex: passage à 14.975%), il faut modifier chaque ligne manuellement.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Calcul pour le client 1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sousTotal1</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sousTotal1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.15</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Facture 1 : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">total1</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> $`</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Calcul pour le client 2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sousTotal2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">250</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sousTotal2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.15</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Facture 2 : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">total2</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> $`</span>);</span></span></code></pre></div>
+<h3 id="-bonne-pratique--refactorisation-avec-une-fonction-dry">🟢 Bonne pratique : Refactorisation avec une fonction (DRY)<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>En centralisant la logique dans une fonction, le code devient réutilisable, maintenable et testable.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// La logique est centralisée et réutilisable
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">calculerTotalAvecTaxe</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">montant</span>, <span style="color:#a6e22e">taux</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.15</span>) =&gt; <span style="color:#a6e22e">montant</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">taux</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculerTotalAvecTaxe</span>(<span style="color:#ae81ff">100</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">total2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">calculerTotalAvecTaxe</span>(<span style="color:#ae81ff">250</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Facture 1 : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">total1</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> $`</span>);
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Facture 2 : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">total2</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> $`</span>);</span></span></code></pre></div>
+<hr>
+<h2 id="2-fonctions-fléchées-arrow-functions-et-paramètres-par-défaut">2. Fonctions Fléchées (Arrow Functions) et Paramètres par Défaut<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>Les fonctions fléchées (<code>=&gt;</code>) offrent une syntaxe moderne et concise, introduite avec ES6.</p>
+<h3 id="comparaison-des-syntaxes">Comparaison des syntaxes<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Syntaxe traditionnelle (déclaration classique)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">additionner</span>(<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Fonction fléchée ES6 (expression)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">additionnerES6</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>) =&gt; <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span>;</span></span></code></pre></div>
+<h3 id="exemple-31--fonction-de-calcul-avec-paramètre-par-défaut">Exemple 3.1 : Fonction de calcul avec paramètre par défaut<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Un paramètre par défaut prend sa valeur si aucun argument n&rsquo;est fourni lors de l&rsquo;appel.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Le taux de taxe est fixé à 15% (0.15) par défaut
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">calculerMontantTaxe</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">montant</span>, <span style="color:#a6e22e">tauxTaxe</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.15</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">montant</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">tauxTaxe</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">commande</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">100.00</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Utilise le taux par défaut (15%)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Total par défaut : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">calculerMontantTaxe</span>(<span style="color:#a6e22e">commande</span>).<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>); 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Surcharge du taux par défaut (5%)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Total réduit : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">calculerMontantTaxe</span>(<span style="color:#a6e22e">commande</span>, <span style="color:#ae81ff">0.05</span>).<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);</span></span></code></pre></div>
+<hr>
+<h2 id="3-opérations-sur-les-tableaux--ajout-insertion-et-suppression">3. Opérations sur les Tableaux : Ajout, Insertion et Suppression<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<p>JavaScript fournit plusieurs méthodes intégrées pour modifier le contenu d&rsquo;un tableau.</p>
+<h3 id="vue-densemble-des-méthodes-de-modification">Vue d&rsquo;ensemble des méthodes de modification<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Méthode</th>
+          <th style="text-align: left">Action</th>
+          <th style="text-align: left">Position</th>
+          <th style="text-align: left">Retourne</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>push(elem)</code></td>
+          <td style="text-align: left">Ajouter</td>
+          <td style="text-align: left">Fin du tableau</td>
+          <td style="text-align: left">Nouvelle longueur</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>unshift(elem)</code></td>
+          <td style="text-align: left">Insérer</td>
+          <td style="text-align: left">Début du tableau</td>
+          <td style="text-align: left">Nouvelle longueur</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>pop()</code></td>
+          <td style="text-align: left">Retirer</td>
+          <td style="text-align: left">Fin du tableau</td>
+          <td style="text-align: left">Élément retiré</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>shift()</code></td>
+          <td style="text-align: left">Retirer</td>
+          <td style="text-align: left">Début du tableau</td>
+          <td style="text-align: left">Élément retiré</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>splice(index, nb, ...elem)</code></td>
+          <td style="text-align: left">Insérer / Retirer</td>
+          <td style="text-align: left">Position spécifique</td>
+          <td style="text-align: left">Tableau des éléments retirés</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="exemple-32--manipulation-complète-dune-file-de-traitement">Exemple 3.2 : Manipulation complète d&rsquo;une file de traitement<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fruits</span> <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Pomme&#34;</span>, <span style="color:#e6db74">&#34;Banane&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 1. Ajouter à la fin (push)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">push</span>(<span style="color:#e6db74">&#34;Orange&#34;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Résultat: [&#34;Pomme&#34;, &#34;Banane&#34;, &#34;Orange&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 2. Insérer au début (unshift)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">unshift</span>(<span style="color:#e6db74">&#34;Fraise&#34;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Résultat: [&#34;Fraise&#34;, &#34;Pomme&#34;, &#34;Banane&#34;, &#34;Orange&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 3. Retirer le dernier élément (pop)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">dernier</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">pop</span>(); 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Élément retiré (pop) :&#34;</span>, <span style="color:#a6e22e">dernier</span>); <span style="color:#75715e">// &#34;Orange&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 4. Retirer le premier élément (shift)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">premier</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">shift</span>(); 
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Élément retiré (shift) :&#34;</span>, <span style="color:#a6e22e">premier</span>); <span style="color:#75715e">// &#34;Fraise&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 5. Insertion / Suppression à un index précis (splice)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Insertion de &#34;Poire&#34; à l&#39;index 1 sans rien supprimer (0)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">fruits</span>.<span style="color:#a6e22e">splice</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#34;Poire&#34;</span>); 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Résultat: [&#34;Pomme&#34;, &#34;Poire&#34;, &#34;Banane&#34;]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Tableau final :&#34;</span>, <span style="color:#a6e22e">fruits</span>);</span></span></code></pre></div>
+<hr>
+<h2 id="4-combinaison--fonctions-boucles-et-module-math">4. Combinaison : Fonctions, Boucles et Module <code>Math</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h2>
+<h3 id="exemple-33--traitement-dun-tableau-par-une-fonction-fléchée">Exemple 3.3 : Traitement d&rsquo;un tableau par une fonction fléchée<span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">calculerTaxesCommandes</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">commandes</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">commandes</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">montant</span>, <span style="color:#a6e22e">idx</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">montantFinal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">montant</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1.15</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Commande #</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">idx</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> : $</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">montantFinal</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">listeCommandes</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">50.00</span>, <span style="color:#ae81ff">120.50</span>, <span style="color:#ae81ff">15.00</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">calculerTaxesCommandes</span>(<span style="color:#a6e22e">listeCommandes</span>);</span></span></code></pre></div>
+<h3 id="exemple-34--analyse-de-racines-carrées-avec-mathsqrt-et-numberisinteger">Exemple 3.4 : Analyse de racines carrées avec <code>Math.sqrt()</code> et <code>Number.isInteger()</code><span class="btn cstyle anchor copyanchor scrollanchor link noborder notitle interactive"><button type="button" title="Copy link to clipboard"><i class="fa-fw fas fa-link fa-lg"></i></button></span></h3>
+<p>Combine l&rsquo;utilisation de <code>Math.sqrt()</code>, de l&rsquo;opérateur ternaire et de la validation de type d&rsquo;entier.</p>
+<div class="highlight actionbar-wrapper wrap-code" dir="auto"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">analyserRacine</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">nombre</span>) =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">racine</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sqrt</span>(<span style="color:#a6e22e">nombre</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Vérifie si la racine est un nombre entier (ex: 3 pour 9, 4.89 pour 24)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">estEntier</span> <span style="color:#f92672">=</span> Number.<span style="color:#a6e22e">isInteger</span>(<span style="color:#a6e22e">racine</span>) <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Racine exacte&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Racine décimale&#34;</span>;
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Nombre : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">nombre</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> | Racine : </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">racine</span>.<span style="color:#a6e22e">toFixed</span>(<span style="color:#ae81ff">2</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74"> (</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">estEntier</span><span style="color:#e6db74">}</span><span style="color:#e6db74">)`</span>);
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">listeNombres</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">49</span>];
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">listeNombres</span>.<span style="color:#a6e22e">forEach</span>((<span style="color:#a6e22e">n</span>) =&gt; <span style="color:#a6e22e">analyserRacine</span>(<span style="color:#a6e22e">n</span>));</span></span></code></pre></div>
+
+  <footer class="footline">
+              <i class='fa-fw fas fa-calendar'></i> Nov 4, 2026
+  </footer>
+</article>
+        </div>
+      </main>
+    </div>
+    <aside id="R-sidebar" class="default-animation">
+      <div id="R-header-topbar" class="default-animation"></div>
+      <div id="R-header-wrapper" class="default-animation">
+        <a id="R-logo" class="R-default direction-row" href="http://localhost:1313/index.html">
+          <span class="logo-title default-animation">420-112 Création de sites web</span>
+        </a>
+        <search><form action="http://localhost:1313/search/index.html" method="get">
+          <div class="searchbox default-animation">
+            <button class="search-detail" type="submit" title="Search (CTRL+ALT+f)"><i class="fas fa-fw fa-search"></i></button>
+            <label class="a11y-only" for="R-search-by">Search</label>
+            <input data-search-input id="R-search-by" name="search-by" class="search-by" type="search" placeholder="Search...">
+            <button class="search-clear" type="button" data-search-clear="" title="Clear search"><i class="fas fa-fw fa-times" title="Clear search"></i></button>
+          </div>
+        </form></search>
+      </div>
+      <div id="R-homelinks" class="default-animation">
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-homelinks default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-headercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+      </div>
+      <div id="R-content-wrapper" class="highlightable">
+        <div class="R-sidebarmenu R-shortcutmenu-main default-animation">
+          <ul class="enlarge morespace collapsible-menu">
+            <li class="" data-nav-id="/html/index.html"><a class="padding default-animation" href="http://localhost:1313/html/index.html">Html</a><ul id="R-subsections-11f324094906faa51a9fe97924473df2" class="collapsible-menu"></ul></li>
+            <li class="" data-nav-id="/css/index.html"><a class="padding default-animation" href="http://localhost:1313/css/index.html">Css</a><ul id="R-subsections-cb550966e0fcd7cba12f6b14839a317a" class="collapsible-menu"></ul></li>
+            <li class="parent " data-nav-id="/js/index.html"><a class="padding default-animation" href="http://localhost:1313/js/index.html">Js</a><ul id="R-subsections-4f94b014729f610957bffa5a86d7dc7d" class="collapsible-menu">
+            <li class="" data-nav-id="/js/loops/index.html"><a class="padding" href="http://localhost:1313/js/loops/index.html">Chapitre 1 : Les Boucles</a></li>
+            <li class="" data-nav-id="/js/control/index.html"><a class="padding" href="http://localhost:1313/js/control/index.html">Chapitre 2 : Les Structures Conditionnelles (if, switch, ternaire)</a></li>
+            <li class="active " data-nav-id="/js/functions/index.html"><a class="padding" href="http://localhost:1313/js/functions/index.html">Chapitre 3 : Fonctions &amp; Notions ES6</a></li>
+            <li class="" data-nav-id="/js/exercices/index.html"><a class="padding" href="http://localhost:1313/js/exercices/index.html">Exercices</a></li></ul></li>
+          </ul>
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-shortcuts default-animation">
+          <ul class="space collapsible-menu">
+          </ul>
+        </div>
+        <div id="R-footer-margin" class="default-animation"></div>
+        <div class="R-menu-divider default-animation">
+          <hr class="padding default-animation">
+        </div>
+        <div class="R-sidebarmenu R-shortcutmenu-footercontrols default-animation">
+          <ul class="">
+          </ul>
+        </div>
+<div id="R-footer" class="default-animation"><p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p></div>
+      </div>
+    </aside>
+    <script src="http://localhost:1313/js/perfect-scrollbar/perfect-scrollbar.min.js?1793817605" defer></script>
+    <script src="http://localhost:1313/js/theme.js?1793817605" defer></script>
+    <div id="toast-container" role="status" aria-live="polite" aria-atomic="false"></div>
+  </body>
+</html>
