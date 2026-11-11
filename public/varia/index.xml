@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Varia :: 420-112 Création de sites web</title>
+    <link>http://localhost:1313/varia/index.html</link>
+    <description>Exercices de Débogage JavaScript dans VS Code Ce document contient 3 scénarios réels de bugs JavaScript avec leurs structures HTML et JS. Utilisez ces exercices pour vous entraîner à placer des points d’arrêt (breakpoints), inspecter des variables, exécuter le code pas à pas et utiliser le débogueur de VS Code.&#xA;Exercice 1 : Le Compteur Décalé (Off-By-One) Description du problème Ce compteur est censé afficher les nombres de 1 à 10 lorsqu’on clique sur le bouton. Cependant, il affiche actuellement les nombres de 0 à 9.</description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Wed, 11 Nov 2026 13:39:12 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/varia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Debugging</title>
+      <link>http://localhost:1313/varia/debugging/index.html</link>
+      <pubDate>Wed, 11 Nov 2026 13:39:12 -0500</pubDate>
+      <guid>http://localhost:1313/varia/debugging/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

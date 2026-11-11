@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/js/control/index.html</loc>
-    <lastmod>2026-11-04T13:26:21-05:00</lastmod>
+    <loc>http://localhost:1313/varia/debugging/index.html</loc>
+    <lastmod>2026-11-11T13:39:12-05:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/dom/dom/index.html</loc>
+    <lastmod>2026-11-11T13:34:35-05:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/js/loops/index.html</loc>
+    <lastmod>2026-11-04T13:26:16-05:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/css/bases/intro/index.html</loc>
@@ -27,6 +35,14 @@
   <url>
     <loc>http://localhost:1313/html/index.html</loc>
     <lastmod>2026-08-25T15:28:34-04:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/dom/queries/index.html</loc>
+    <lastmod>2026-11-11T13:34:40-05:00</lastmod>
+  </url>
+  <url>
+    <loc>http://localhost:1313/js/control/index.html</loc>
+    <lastmod>2026-11-04T13:26:21-05:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/css/alignement/index.html</loc>
@@ -57,12 +73,12 @@
     <lastmod>2026-08-25T15:31:51-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/js/functions/index.html</loc>
-    <lastmod>2026-11-04T13:26:26-05:00</lastmod>
+    <loc>http://localhost:1313/dom/events/index.html</loc>
+    <lastmod>2026-11-11T13:35:07-05:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/js/loops/index.html</loc>
-    <lastmod>2026-11-04T13:26:16-05:00</lastmod>
+    <loc>http://localhost:1313/js/functions/index.html</loc>
+    <lastmod>2026-11-04T13:26:26-05:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/css/alignement/alignement/index.html</loc>
@@ -101,6 +117,10 @@
     <lastmod>2026-08-25T15:31:30-04:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:1313/js/index.html</loc>
+    <lastmod>2026-11-04T13:25:56-05:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/css/bases/exercices/index.html</loc>
     <lastmod>2026-09-02T13:35:59-04:00</lastmod>
   </url>
@@ -109,16 +129,20 @@
     <lastmod>2026-08-26T00:22:01-04:00</lastmod>
   </url>
   <url>
+    <loc>http://localhost:1313/dom/index.html</loc>
+    <lastmod>2026-11-11T13:34:28-05:00</lastmod>
+  </url>
+  <url>
     <loc>http://localhost:1313/html/interactivite/index.html</loc>
     <lastmod>2026-08-25T15:38:15-04:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/html/contenu/exercices/index.html</loc>
-    <lastmod>2026-08-26T00:14:30-04:00</lastmod>
+    <loc>http://localhost:1313/varia/index.html</loc>
+    <lastmod>2026-11-11T13:39:06-05:00</lastmod>
   </url>
   <url>
-    <loc>http://localhost:1313/js/index.html</loc>
-    <lastmod>2026-11-04T13:25:56-05:00</lastmod>
+    <loc>http://localhost:1313/html/contenu/exercices/index.html</loc>
+    <lastmod>2026-08-26T00:14:30-04:00</lastmod>
   </url>
   <url>
     <loc>http://localhost:1313/css/bases/index.html</loc>

@@ -6,7 +6,7 @@
     <description></description>
     <generator>Hugo</generator>
     <language>fr-ca</language>
-    <lastBuildDate>Wed, 04 Nov 2026 13:25:56 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:39:06 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Html</title>
@@ -28,6 +28,20 @@
       <pubDate>Wed, 04 Nov 2026 13:25:56 -0500</pubDate>
       <guid>http://localhost:1313/js/index.html</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Dom</title>
+      <link>http://localhost:1313/dom/index.html</link>
+      <pubDate>Wed, 11 Nov 2026 13:34:28 -0500</pubDate>
+      <guid>http://localhost:1313/dom/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Varia</title>
+      <link>http://localhost:1313/varia/index.html</link>
+      <pubDate>Wed, 11 Nov 2026 13:39:06 -0500</pubDate>
+      <guid>http://localhost:1313/varia/index.html</guid>
+      <description>Exercices de Débogage JavaScript dans VS Code Ce document contient 3 scénarios réels de bugs JavaScript avec leurs structures HTML et JS. Utilisez ces exercices pour vous entraîner à placer des points d’arrêt (breakpoints), inspecter des variables, exécuter le code pas à pas et utiliser le débogueur de VS Code.&#xA;Exercice 1 : Le Compteur Décalé (Off-By-One) Description du problème Ce compteur est censé afficher les nombres de 1 à 10 lorsqu’on clique sur le bouton. Cependant, il affiche actuellement les nombres de 0 à 9.</description>
     </item>
   </channel>
 </rss>

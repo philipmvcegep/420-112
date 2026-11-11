@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dom :: 420-112 Création de sites web</title>
+    <link>http://localhost:1313/dom/index.html</link>
+    <description></description>
+    <generator>Hugo</generator>
+    <language>fr-ca</language>
+    <lastBuildDate>Wed, 11 Nov 2026 13:35:07 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/dom/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dom</title>
+      <link>http://localhost:1313/dom/dom/index.html</link>
+      <pubDate>Wed, 11 Nov 2026 13:34:35 -0500</pubDate>
+      <guid>http://localhost:1313/dom/dom/index.html</guid>
+      <description>Lorsque vous écrivez un fichier HTML, vous rédigez simplement un document texte statique. Mais lorsqu’un navigateur web ouvre ce fichier, il transforme ce texte brut en un modèle d’objets vivant, interactif et modifiable stocké en mémoire vive.&#xA;Cette transformation est le DOM (Document Object Model). Ce n’est pas un langage de programmation ; c’est une interface de programmation (API) fournie par le navigateur qui permet à des langages comme JavaScript de lire, manipuler, mettre à jour et réagir à la structure, au style et au contenu d’une page web à la volée.</description>
+    </item>
+    <item>
+      <title>Queries</title>
+      <link>http://localhost:1313/dom/queries/index.html</link>
+      <pubDate>Wed, 11 Nov 2026 13:34:40 -0500</pubDate>
+      <guid>http://localhost:1313/dom/queries/index.html</guid>
+      <description>Avant de pouvoir modifier le contenu, changer le style ou réagir aux clics d’un utilisateur, JavaScript doit trouver et attraper l’élément HTML ciblé dans l’arbre DOM. C’est l’étape de la sélection.&#xA;Il existe plusieurs méthodes pour attraper des éléments. Chacune a ses spécificités, ses forces et ses pièges. Voyons les 4 méthodes incontournables.&#xA;1. Les 4 Méthodes de Sélection A. document.getElementById(&#39;mon-id&#39;) Ce que ça fait : Cherche un élément unique par son attribut id. Ce que ça retourne : Un unique objet élément (ou null si rien ne correspond). À retenir : C’est la méthode la plus rapide et la plus directe, mais elle exige que l’ID soit unique dans toute la page. B. document.getElementsByClassName(&#39;ma-classe&#39;) Ce que ça fait : Cherche tous les éléments qui possèdent une classe CSS spécifique. Ce que ça retourne : Une HTMLCollection (une liste d’éléments semblable à un tableau, mais vivante : elle se met à jour automatiquement si le DOM change). À retenir : Attention, on ne peut pas utiliser directement .forEach() sur une HTMLCollection sans la convertir au préalable (ou utiliser une boucle for classique). C. document.querySelector(&#39;selecteur-css&#39;) Ce que ça fait : Utilise la même syntaxe que les sélecteurs CSS (#id, .classe, balise, ou des combinaisons comme div &gt; p). Ce que ça retourne : Le tout premier élément qui correspond au sélecteur. À retenir : Extrêmement puissant et polyvalent, idéal pour cibler un élément précis grâce à la logique CSS. D. document.querySelectorAll(&#39;selecteur-css&#39;) Ce que ça fait : Cherche tous les éléments qui correspondent au sélecteur CSS fourni. Ce que ça retourne : Une NodeList statique. À retenir : Contrairement à getElementsByClassName, la NodeList possède nativement la méthode .forEach(), ce qui la rend beaucoup plus agréable à manipuler en JavaScript moderne. Exemples de Code Examinons un exemple pratique pour chaque méthode de sélection.</description>
+    </item>
+    <item>
+      <title>Events</title>
+      <link>http://localhost:1313/dom/events/index.html</link>
+      <pubDate>Wed, 11 Nov 2026 13:35:07 -0500</pubDate>
+      <guid>http://localhost:1313/dom/events/index.html</guid>
+      <description>title: “Chapitre 3 : Les Écouteurs d’Événements (Event Listeners)” weight: 3 Jusqu’à présent, nos scripts s’exécutaient soit immédiatement au chargement de la page, soit lorsqu’on cliquait sur un attribut inline (onclick=&#34;...&#34;). En programmation moderne, c’est une mauvaise pratique de mélanger HTML et JS de cette manière.&#xA;Pour rendre une page interactive, on utilise les événements (clics, saisie de texte, survol de souris, etc.) et on les écoute grâce à addEventListener().</description>
+    </item>
+  </channel>
+</rss>
